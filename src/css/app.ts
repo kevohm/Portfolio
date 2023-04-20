@@ -1,8 +1,8 @@
 import styled from "styled-components"
 import tw from "twin.macro"
 
-const Main = styled.div`
-  ${tw`w-full max-w-[1440px] mx-auto bg-white dark:bg-[#555555]`}
+const Main = styled.div` 
+  ${tw`w-full max-w-[1440px] h-full mx-auto bg-white dark:bg-[#555555]`}
   .small-popup {
     ${tw`hidden relative p-0 m-0 absolute left-0 top-0 w-screen h-screen bg-white  items-center justify-center z-40`}
     .iconHolder {

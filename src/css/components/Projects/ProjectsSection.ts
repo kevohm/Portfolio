@@ -2,7 +2,7 @@ import styled from "styled-components"
 import tw from "twin.macro"
 
 export const Main = styled.section`
-  ${tw`min-h-screen pb-6 dark:bg-[#404040]`}
+  ${tw`min-h-screen pb-6 bg-white dark:bg-[#404040]`}
   .projects {
     ${tw`flex flex-col items-center px-2 sm:p-0 sm:items-start sm:flex-row `}
 

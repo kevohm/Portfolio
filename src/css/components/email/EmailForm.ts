@@ -20,6 +20,6 @@ export const Main = styled.form`
     resize:none;
   }
   input[type="submit"] {
-    ${tw`bg-[#74CBF1] mt-6 text-white hover:bg-[#6ABADD]`}
+    ${tw`cursor-pointer bg-[#74CBF1] dark:bg-[#74CBF1] mt-6 text-white hover:bg-[#6ABADD]`}
   }
 `;

@@ -3,11 +3,10 @@ import { useGlobally } from '../../context/context';
 
 
 const DarkMode: React.FC = () => {
-  const {mode, setMode} = useGlobally()
+  const {mode, changeMode} = useGlobally()
   const handleDark = (e: React.FormEvent) => {
     e.preventDefault();
-    setMode(!mode);
-    console.log(mode)
+    changeMode(!mode);
   };
   return (
     <div className={`dark-mode-toggle ${mode ? "active-dark" : ""}`}>

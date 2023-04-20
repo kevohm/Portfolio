@@ -3,8 +3,11 @@ import tw from "twin.macro";
 
 export const Main = styled.div`
   ${tw`border bg-white border-solid border-[#F1F1F1] rounded-lg h-fit`}
-  img {
-    ${tw`w-full rounded-t-lg`}
+  >a{
+    ${tw`w-full`}
+    img {
+      ${tw`w-full rounded-t-lg`}
+    }
   }
   p {
     ${tw`m-0 p-0 p-3 text-[#232E35]`}

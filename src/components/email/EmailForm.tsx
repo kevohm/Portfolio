@@ -1,4 +1,3 @@
-import React from 'react'
 import {Main} from "../../css/components/email/EmailForm"
 const EmailForm = () => {
   return (

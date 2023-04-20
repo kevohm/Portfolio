@@ -28,7 +28,7 @@ const App: React.FC = () => {
         </div>
         <ListLinks />
       </div>
-      
+       
       <IntroSection handleClick={handleClick} />
       <ServicesSection />
       <ProjectsSection />

@@ -2,7 +2,7 @@ import styled from "styled-components"
 import tw from "twin.macro"
 
 export const Main = styled.footer`
-  ${tw`flex flex-col py-10 items-center text-[#656D72] dark:text-white dark:bg-[#404040]`}
+  ${tw`flex flex-col py-10 items-center text-[#656D72] bg-white dark:text-white dark:bg-[#404040]`}
   .icons {
     ${tw`p-6 flex space-x-4 text-[14px] text-[#656D72] dark:text-white`}
     a {
