@@ -1,17 +1,17 @@
 import styled from "styled-components"
-import tw from "twin.macro"
+import tw from "twin.macro" 
 
 const Main = styled.div` 
-  ${tw`w-full max-w-[1440px] h-full mx-auto bg-white dark:bg-[#555555]`}
+  ${tw`w-full relative max-w-[1440px] mx-auto flex flex-col items-start bg-white dark:bg-black`}
   .small-popup {
-    ${tw`hidden relative p-0 m-0 absolute left-0 top-0 w-screen h-screen bg-white  items-center justify-center z-40`}
+    ${tw`hidden p-0 m-0 absolute left-0 top-0 w-screen h-screen bg-white  items-center justify-center z-40`}
     .iconHolder {
       ${tw`absolute top-0 left-0 py-3 px-4  flex items-center justify-between w-full`}
       .times-icon {
-        ${tw`text-[25px] text-[#404040]`}
+        ${tw`text-[25px] text-darkGrey`}
       }
       .dark-mode-toggle {
-        ${tw`bg-[#404040] w-[35px] h-[15px] rounded-xl relative border border-solid border-[#404040]`}
+        ${tw`bg-darkGrey w-[35px] h-[15px] rounded-xl relative border border-solid border-darkGrey`}
 
         label {
           ${tw`bg-white w-[10px] h-[10px] absolute left-[4px] top-[2px]  rounded-xl flex items-center justify-center`}
@@ -23,19 +23,19 @@ const Main = styled.div`
       .active-dark {
         ${tw`bg-white`}
         label {
-          ${tw`left-[21px] bg-[#404040]`}
+          ${tw`left-[21px] bg-darkGrey`}
         }
       }
     }
     ul {
       ${tw`p-0 m-0  w-full list-none items-start justify-evenly space-y-4 flex flex-col`}
       li {
-        ${tw`p-0 m-0 w-full p-3 pl-10 pr-0 text-lg cursor-pointer text-[#404040] hover:text-white hover:bg-[#404040]`}
+        ${tw`p-0 m-0 w-full p-3 pl-10 pr-0 text-lg cursor-pointer text-darkGrey hover:text-white hover:bg-darkGrey`}
       }
     }
   }
   .small-popup-active {
-    ${tw`bg-[#404040]`}
+    ${tw`bg-[#000]`}
     .iconHolder {
       .times-icon {
         ${tw`text-[#fff]`}
@@ -43,7 +43,7 @@ const Main = styled.div`
     }
     ul {
       li {
-        ${tw`text-[#fff] hover:bg-[#fff] hover:text-[#404040]`}
+        ${tw`text-[#fff] hover:bg-[#fff] hover:text-darkGrey`}
       }
     }
   }

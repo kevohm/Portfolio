@@ -2,7 +2,7 @@ import styled from "styled-components"
 import tw from "twin.macro"
 
 export const Header = styled.header`
-  ${tw`relative py-0 px-4 md:px-12 border border-solid border-transparent flex items-center justify-between w-full dark:bg-[#404040]`}
+  ${tw`relative py-0 px-4 md:px-12 border border-solid border-transparent flex items-center justify-between w-full dark:bg-darkGrey`}
   border-bottom:1px solid #D3D3D3;
   font-weight: 600;
   p {

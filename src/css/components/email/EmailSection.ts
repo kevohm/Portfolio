@@ -2,8 +2,8 @@ import styled from "styled-components";
 import tw from "twin.macro";
 
 export const Main = styled.section`
-  ${tw`min-h-[calc(100vh - 100px)] bg-white dark:bg-[#404040]`}
+  ${tw`w-full bg-white dark:bg-darkGrey`}
   .details {
-    ${tw`min-h-full flex flex-col items-center sm:flex-row sm:items-start pt-10`}
+    ${tw`flex flex-col items-center sm:flex-row sm:items-start pt-10`}
   }
 `;

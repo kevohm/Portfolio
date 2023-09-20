@@ -5,7 +5,7 @@ import {services} from "../../utils/Service"
 import Service from "./Service"
 const ServicesSection = () => {
   return (
-      <Main>
+      <Main id="services">
           <CommonHeader title="Services" />
           <div className='services'>
               {services.map(

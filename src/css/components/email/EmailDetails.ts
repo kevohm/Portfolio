@@ -16,6 +16,9 @@ export const Main = styled.div`
       p {
         ${tw`text-[14px] dark:text-white`}
       }
+      h1{
+        ${tw`dark:text-white`}
+      }
     }
   }
 `;

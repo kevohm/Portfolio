@@ -9,14 +9,14 @@ export const Main = styled.form`
       ${tw`text-[#656D72]`}
       font-family:Inter;
     }
-    ${tw`w-full p-2 rounded border border-solid border-[#D3D3D3] dark:bg-[#404040] dark:text-white`}
+    ${tw`w-full p-2 rounded border border-solid border-[#D3D3D3] dark:bg-transparent dark:text-white`}
   }
   textarea {
     ::placeholder {
       ${tw`text-[#656D72]`}
       font-family:Inter;
     }
-    ${tw`p-2 w-full h-[150px] rounded border border-solid border-[#D3D3D3] dark:bg-[#404040] dark:text-white`}
+    ${tw`p-2 w-full h-[150px] rounded border border-solid border-[#D3D3D3] dark:bg-transparent dark:text-white`}
     resize:none;
   }
   input[type="submit"] {

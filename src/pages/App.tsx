@@ -27,7 +27,7 @@ const App: React.FC = () => {
           <FaTimes className="times-icon" onClick={(e) => handleClick(e)} />
         </div>
         <ListLinks />
-      </div>
+      </div> 
        
       <IntroSection handleClick={handleClick} />
       <ServicesSection />
