@@ -27,15 +27,9 @@ const Footer = () => {
                         >
                           Projects
                         </a>
-                        <a
-                          className="transition hover:text-teal-500 dark:hover:text-teal-400"
-                          href="/about"
-                        >
-                          About
-                        </a>
                       </div>
                       <p className="text-sm text-zinc-400 dark:text-zinc-500">
-                        © 2024 Coding Addict. All rights reserved.
+                        © 2024 Kevin Kibet. All rights reserved.
                       </p>
                     </div>
                   </div>
