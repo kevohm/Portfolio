@@ -53,7 +53,7 @@ function MenuPopup() {
           </button>
         </header>
         <ul className="mt-2 flex flex-col space-y-2">
-          {links.map((link, index) => {
+          {links.map((link) => {
             return (
               <>
                 <SingleLink

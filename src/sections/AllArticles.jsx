@@ -56,7 +56,7 @@ function AllArticles() {
                           src={article.thumbnail} // Use article image
                         />
                       </div> */}
-                      <div className="h-[200px] w-full relative z-10 flex items-center justify-center bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
+                      <div className="h-[200px] rounded-xl overflow-hidden w-full relative z-10 flex items-center justify-center bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
                         <img
                           loading="lazy"
                           decoding="async"
