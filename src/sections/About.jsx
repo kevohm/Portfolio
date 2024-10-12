@@ -1,5 +1,6 @@
 import Footer from "./Footer";
 import Header from "./Header";
+import profileImage from "../assets/passportPhoto.png"
 
 const About = () => {
   return (
@@ -17,18 +18,18 @@ const About = () => {
               <div className="relative px-4 sm:px-8 lg:px-12">
                 <div className="mx-auto max-w-2xl lg:max-w-5xl">
                   <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
-                    <div className="lg:pl-20">
+                    <div className="justify-self-center lg:pl-20">
                       <div className="max-w-xs px-2.5 lg:max-w-none">
-                        {/* <img alt="" loading="lazy" width="750" height="429" decoding="async" data-nimg="1" className="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800" style="color:transparent" sizes="(min-width: 1024px) 32rem, 20rem" srcSet="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhome-away.6a680dba.png&amp;w=16&amp;q=75 16w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhome-away.6a680dba.png&amp;w=32&amp;q=75 32w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhome-away.6a680dba.png&amp;w=48&amp;q=75 48w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhome-away.6a680dba.png&amp;w=64&amp;q=75 64w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhome-away.6a680dba.png&amp;w=96&amp;q=75 96w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhome-away.6a680dba.png&amp;w=128&amp;q=75 128w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhome-away.6a680dba.png&amp;w=256&amp;q=75 256w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhome-away.6a680dba.png&amp;w=384&amp;q=75 384w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhome-away.6a680dba.png&amp;w=640&amp;q=75 640w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhome-away.6a680dba.png&amp;w=750&amp;q=75 750w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhome-away.6a680dba.png&amp;w=828&amp;q=75 828w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhome-away.6a680dba.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhome-away.6a680dba.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhome-away.6a680dba.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhome-away.6a680dba.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhome-away.6a680dba.png&amp;w=3840&amp;q=75 3840w" src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhome-away.6a680dba.png&amp;w=3840&amp;q=75"/> */}
+                        <img alt="profile" loading="lazy" width="750" height="429"  className="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800" style={{color:"transparent"}} src={profileImage}/>
                       </div>
                     </div>
                     <div className="lg:order-first lg:row-span-2">
                       <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-                          My name is Kevin Kipkemboi. I am a software engineer.
+                          My name is Kevin Kipkemboi, a software engineer.
                       </h1>
-                      <h1 className=" border border-green-100 text-green-600 font-bold px-3 rounded-xl mt-5 py-2 text-base">
+                      {/* <h1 className=" border border-green-100 text-green-600 font-bold px-3 rounded-xl mt-5 py-2 text-base">
                          Bsc. Mathematics(pure mathematics) and computer science
-                      </h1>
+                      </h1> */}
                       <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
                         <p>
                           My education and training have given me a deep

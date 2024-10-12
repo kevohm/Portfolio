@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 * {
-  color-scheme: dark;
+  color-scheme: normal;
   --header-position: sticky;
   --content-offset: 0px;
   --header-height: 64px;

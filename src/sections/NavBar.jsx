@@ -1,4 +1,5 @@
 import { NavLink, useLocation } from "react-router-dom";
+import { useAppContext } from "../context/contextApi";
 
 const SingleLink = ({ title, path }) => {
   const { pathname } = useLocation();
@@ -18,10 +19,11 @@ const SingleLink = ({ title, path }) => {
 };
 
 const NavBar = () => {
+  const {isOpen, setIsOpen} = useAppContext()
   const links = [
     {
-      path: "/courses",
-      title: "Courses",
+      path: "/experience",
+      title: "Experience",
     },
     {
       path: "/articles",
@@ -41,6 +43,7 @@ const NavBar = () => {
           type="button"
           aria-expanded="false"
           data-headlessui-state=""
+          onClick={()=>setIsOpen(true)}
         >
           Menu
           <svg
