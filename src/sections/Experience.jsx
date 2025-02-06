@@ -238,7 +238,7 @@ const Experience = () => {
                               <time className="md:hidden relative z-10 order-first mb-3 flex items-center text-sm text-zinc-400 dark:text-zinc-500 pl-3.5">
                                 {experience.duration}
                               </time>
-                              <ul className="text-sm text-zinc-400 dark:text-zinc-500 list-disc flex flex-col space-y-3">
+                              <ul className="text-sm text-zinc-600 dark:text-zinc-400 flex flex-col space-y-3">
                                 {experience.roles.map((role, index) => (
                                   <li
                                     key={index}
