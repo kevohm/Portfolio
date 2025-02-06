@@ -2,7 +2,7 @@ import NavBar from "./NavBar";
 import profileImage from "../assets/profile.png"
 
 import { FaDownload } from 'react-icons/fa'; // Make sure to install react-icons if you haven't
-import cv from "../assets/Kevin_Kipkemboi_CV.pdf"
+import cv from "../assets/kevin_kipkemboi_cv.pdf"
 const DownloadCVButton = () => {
   return (
     <div className=" flex justify-center">
