@@ -1,7 +1,51 @@
+
 import Footer from "./Footer";
 import Header from "./Header";
 
 const Experience = () => {
+  const experiences = [
+    {
+      duration: "May 2024 – Present",
+      title: "Frontend Engineer at Tugrow",
+      roles: [
+        "Designed mock-ups for a resume application",
+        "Developed UI components using NextJS together with Redux for state management",
+        "Came up with branding strategies and even a cool company name",
+      ],
+    },
+    {
+      duration: "June 2024 – Present",
+      title: "Junior Software Engineer at Alpha Nex Softwares",
+      roles: [
+        "Developed and deployed responsive web and mobile applications, including a POS system, and an API for a logistics tracker, using Nginx, PM2, and Linode, ensuring 98% uptime.",
+        "Translated wireframes and design mockups into functional UI components using React.js and Tailwind CSS.",
+        "Collaborated with developers to seamlessly integrate APIs into the front end.",
+        "Developed algorithms to improve user authentication and authorization, including integration with external services for authentication and service provisioning.",
+        "Developed a Node.js wrapper to simplify file upload integration, reducing development time by 1 days.",
+        "Optimized the front end using React Developer Tools and enhanced state management and data fetching by replacing Context API with Redux and Axios with TanStack Query.",
+        "Conducted research on Job Scheduling and Background tasks for creation of a email notification system using Nunjucks, redis and bullMQ"
+      ],
+    },
+    {
+      duration: "Feb 2024 – June 2024",
+      title: "Software Engineering Internship at Alpha Nex Softwares",
+      roles: [
+        "Designed and developed a credit management system using Node.js, MySQL, and React.js to showcase my skill set.",
+        "Earned a promotion through exceptional performance in RESTful API and user interface development.",
+        "Enhanced SEO for a WordPress website to boost web traffic and improve search engine rankings.",
+        "Mentored a group of attaches, teaching them about authentication and authorization.",
+      ],
+    },
+    {
+      duration: "Sep 2019 – June 2024",
+      title: "Bachelor of Science in Mathematics and Computer Science - JKUAT",
+      roles: [
+        "Graduated with Second Class Honors (Upper)",
+        "Participated in the Google Student Developer Club",
+        "Developed the 'Intelligent Parking Assistant' for my research project.",
+      ],
+    },
+  ];
   return (
     <div className="flex w-full">
       <div className="fixed inset-0 flex justify-center sm:px-8">
@@ -171,85 +215,45 @@ const Experience = () => {
                     </h1>
                     <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
                       A timeline of my professional and educational experiences,
-                      highlighting key projects, languages, and frameworks I&apos;ve
-                      worked with.
+                      highlighting key projects, languages, and frameworks
+                      I&apos;ve worked with.
                     </p>
                   </header>
                   <div className="mt-16 sm:mt-20">
                     <div className="md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40">
                       <div className="flex max-w-3xl flex-col space-y-16">
-                        <article className="md:grid md:grid-cols-4 md:items-baseline">
-                          <div className="md:col-span-3 group relative flex flex-col items-start">
-                            <h2 className="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
-                              <a href="/experience/tugrow-frontend-engineer">
-                                <span className="relative z-10">
-                                  Frontend Engineer at Tugrow
-                                </span>
-                              </a>
-                            </h2>
-                            <time className="md:hidden relative z-10 order-first mb-3 flex items-center text-sm text-zinc-400 dark:text-zinc-500 pl-3.5">
+                        {experiences.map((experience, index) => (
+                          <article
+                            key={index}
+                            className="md:grid md:grid-cols-4 md:items-baseline"
+                          >
+                            <div className="md:col-span-3 group relative flex flex-col items-start">
+                              <h2 className="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
+                                <a href="/experience/tugrow-frontend-engineer">
+                                  <span className="relative z-10">
+                                    {experience.title}
+                                  </span>
+                                </a>
+                              </h2>
+                              <time className="md:hidden relative z-10 order-first mb-3 flex items-center text-sm text-zinc-400 dark:text-zinc-500 pl-3.5">
+                                {experience.duration}
+                              </time>
+                              <ul className="text-sm text-zinc-400 dark:text-zinc-500 list-disc flex flex-col space-y-3">
+                                {experience.roles.map((role, index) => (
+                                  <li
+                                    key={index}
+                                    className="flex items-center space-x-2"
+                                  >
+                                    {role}
+                                  </li>
+                                ))}
+                              </ul>
+                            </div>
+                            <time className="mt-1 hidden md:block relative z-10 order-first mb-3 flex items-center text-sm text-zinc-400 dark:text-zinc-500">
                               May 2024 – Present
                             </time>
-                            <p className="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-                              As a frontend engineer, I have implemented various
-                              features based on user requirements, ensuring a
-                              smooth and intuitive user experience.
-                            </p>
-                          </div>
-                          <time className="mt-1 hidden md:block relative z-10 order-first mb-3 flex items-center text-sm text-zinc-400 dark:text-zinc-500">
-                            May 2024 – Present
-                          </time>
-                        </article>
-
-                        <article className="md:grid md:grid-cols-4 md:items-baseline">
-                          <div className="md:col-span-3 group relative flex flex-col items-start">
-                            <h2 className="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
-                              <a href="/experience/alpha-nex-full-stack-engineer">
-                                <span className="relative z-10">
-                                  Full Stack Software Engineer at Alpha Nex
-                                  Softwares
-                                </span>
-                              </a>
-                            </h2>
-                            <time className="md:hidden relative z-10 order-first mb-3 flex items-center text-sm text-zinc-400 dark:text-zinc-500 pl-3.5">
-                              May 2024 – Present
-                            </time>
-                            <p className="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-                              Leading software quality assurance and backend
-                              development while guiding frontend teams.
-                              Successfully improved existing systems and
-                              mentored interns.
-                            </p>
-                          </div>
-                          <time className="mt-1 hidden md:block relative z-10 order-first mb-3 flex items-center text-sm text-zinc-400 dark:text-zinc-500">
-                            May 2024 – Present
-                          </time>
-                        </article>
-
-                        <article className="md:grid md:grid-cols-4 md:items-baseline">
-                          <div className="md:col-span-3 group relative flex flex-col items-start">
-                            <h2 className="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
-                              <a href="/experience/education-jkuat">
-                                <span className="relative z-10">
-                                  Bachelor of Science in Mathematics and
-                                  Computer Science - JKUAT
-                                </span>
-                              </a>
-                            </h2>
-                            <time className="md:hidden relative z-10 order-first mb-3 flex items-center text-sm text-zinc-400 dark:text-zinc-500 pl-3.5">
-                              Sept 2019 – May 2024
-                            </time>
-                            <p className="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-                              Graduated with Second Class Honors (Upper),
-                              participated in the Google Student Developer Club,
-                              and developed the "Intelligent Parking Assistant"
-                              for my research project.
-                            </p>
-                          </div>
-                          <time className="mt-1 hidden md:block relative z-10 order-first mb-3 flex items-center text-sm text-zinc-400 dark:text-zinc-500">
-                            Sept 2019 – May 2024
-                          </time>
-                        </article>
+                          </article>
+                        ))}
                       </div>
                     </div>
                   </div>
