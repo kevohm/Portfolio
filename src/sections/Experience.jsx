@@ -6,46 +6,55 @@ const Experience = () => {
   const experiences = [
     {
       duration: "May 2024 – Present",
-      title: "Frontend Engineer at Tugrow",
+      title: "Frontend Developer at Tugrow",
       roles: [
-        "Designed mock-ups for a resume application",
-        "Developed UI components using NextJS together with Redux for state management",
-        "Came up with branding strategies and even a cool company name",
+      "Designed mock-ups for a resume application",
+      "Developed UI components using NextJS together with Redux for state management",
+      "Came up with branding strategies and even a cool company name",
+      "Collaborated with cross-functional teams to deliver high-quality features",
+      "Implemented responsive design principles to ensure compatibility across devices",
+      "Enhanced user experience by optimizing performance and accessibility",
       ],
     },
     {
       duration: "June 2024 – Present",
       title: "Junior Software Engineer at Alpha Nex Softwares",
       roles: [
-        "Developed and deployed responsive web and mobile applications, including a POS system, and an API for a logistics tracker, using Nginx, PM2, and Linode, ensuring 98% uptime.",
-        "Translated wireframes and design mockups into functional UI components using React.js and Tailwind CSS.",
-        "Collaborated with developers to seamlessly integrate APIs into the front end.",
-        "Developed algorithms to improve user authentication and authorization, including integration with external services for authentication and service provisioning.",
-        "Developed a Node.js wrapper to simplify file upload integration, reducing development time by 1 days.",
-        "Optimized the front end using React Developer Tools and enhanced state management and data fetching by replacing Context API with Redux and Axios with TanStack Query.",
-        "Conducted research on Job Scheduling and Background tasks for creation of a email notification system using Nunjucks, redis and bullMQ"
+      "Reduced average transaction time by 40% with a React-based UI for quick item selection and one-click M-Pesa payment initiation.",
+      "Built an automated stock tracking system with low-stock alerts, cutting inventory discrepancies by 60%.",
+      "Implemented JWT-based role management, reducing unauthorized access incidents by 100% through token expiration and encryption.",
+      "Created daily sales summaries and exportable PDF/Excel reports, saving businesses 5+ hours/month on manual accounting.",
+      "Deployed the app in 27+ small shops in Nairobi, Kenya, increasing their daily transaction capacity by 30%.",
+      "Successfully implemented Safaricom’s Daraja API to process mobile money transactions, reducing reliance on cash and credit cards for small businesses.",
+      "Conducted research on Job Scheduling and Background tasks for creation of an email notification system using Nunjucks, Redis, and BullMQ.",
+      "Streamlined deployment processes using CI/CD pipelines for faster delivery of updates",
       ],
     },
     {
       duration: "Feb 2024 – June 2024",
       title: "Software Engineering Internship at Alpha Nex Softwares",
       roles: [
-        "Designed and developed a credit management system using Node.js, MySQL, and React.js to showcase my skill set.",
-        "Earned a promotion through exceptional performance in RESTful API and user interface development.",
-        "Enhanced SEO for a WordPress website to boost web traffic and improve search engine rankings.",
-        "Mentored a group of attaches, teaching them about authentication and authorization.",
+      "Developed a credit management system using Node.js, MySQL, and React.js, which improved loan tracking and led to recovery of loans through legal process.",
+      "Improved SEO, leading to better search rankings and increased website traffic.",
+      "Designed a state tracker to manage loan status transitions.",
+      "Implemented React Query to keep frontend data in sync with the backend.",
+      "Used JWT with refresh tokens and rate limiting to protect API endpoints.",
+      "Collaborated with peers using GitHub Projects to deliver features ahead of deadlines.",
+      "Indexed frequently queried columns to reduce response times by 40%.",
+      "Integrated third-party APIs to enhance application functionality and user engagement",
       ],
     },
     {
       duration: "Sep 2019 – June 2024",
       title: "Bachelor of Science in Mathematics and Computer Science - JKUAT",
       roles: [
-        "Graduated with Second Class Honors (Upper)",
-        "Participated in the Google Student Developer Club",
-        "Developed the 'Intelligent Parking Assistant' for my research project.",
+      "Graduated with Second Class Honors (Upper)",
+      "Participated in the Google Student Developer Club",
+      "Developed the 'Intelligent Parking Assistant' for my research project.",
+      "Organized and participated in hackathons to solve real-world problems",
       ],
     },
-  ];
+    ];
   return (
     <div className="flex w-full">
       <div className="fixed inset-0 flex justify-center sm:px-8">
