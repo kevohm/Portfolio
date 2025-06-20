@@ -189,64 +189,70 @@ const SingleProject = () => {
               </div>
 
               {/* Frontend */}
-              <div className="mb-8">
-                <div className="flex items-center mb-4">
-                  <Monitor className="h-5 w-5 text-blue-500 mr-2" />
-                  <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-                    Frontend
-                  </h3>
+              {projectData?.techStack?.frontend?.length > 0 && (
+                <div className="mb-8">
+                  <div className="flex items-center mb-4">
+                    <Monitor className="h-5 w-5 text-blue-500 mr-2" />
+                    <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+                      Frontend
+                    </h3>
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    {projectData.techStack.frontend.map((tech, index) => (
+                      <span
+                        key={index}
+                        className="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 text-sm font-medium rounded-full"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
                 </div>
-                <div className="flex flex-wrap gap-2">
-                  {projectData.techStack.frontend.map((tech, index) => (
-                    <span
-                      key={index}
-                      className="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 text-sm font-medium rounded-full"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-              </div>
+              )}
 
               {/* Backend */}
-              <div className="mb-8">
-                <div className="flex items-center mb-4">
-                  <Database className="h-5 w-5 text-green-500 mr-2" />
-                  <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-                    Backend
-                  </h3>
+              {projectData?.techStack?.backend?.length > 0 && (
+                <div className="mb-8">
+                  <div className="flex items-center mb-4">
+                    <Database className="h-5 w-5 text-green-500 mr-2" />
+                    <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+                      Backend
+                    </h3>
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    {projectData.techStack.backend.map((tech, index) => (
+                      <span
+                        key={index}
+                        className="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-300 text-sm font-medium rounded-full"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
                 </div>
-                <div className="flex flex-wrap gap-2">
-                  {projectData.techStack.backend.map((tech, index) => (
-                    <span
-                      key={index}
-                      className="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-300 text-sm font-medium rounded-full"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-              </div>
+              )}
 
               {/* Tools */}
-              <div>
-                <div className="flex items-center mb-4">
-                  <Wrench className="h-5 w-5 text-orange-500 mr-2" />
-                  <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-                    Tools
-                  </h3>
+              {projectData?.techStack?.tools?.length > 0 && (
+                <div>
+                  <div className="flex items-center mb-4">
+                    <Wrench className="h-5 w-5 text-orange-500 mr-2" />
+                    <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+                      Tools
+                    </h3>
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    {projectData.techStack.tools.map((tool, index) => (
+                      <span
+                        key={index}
+                        className="px-3 py-1 bg-orange-100 dark:bg-orange-900/30 text-orange-800 dark:text-orange-300 text-sm font-medium rounded-full"
+                      >
+                        {tool}
+                      </span>
+                    ))}
+                  </div>
                 </div>
-                <div className="flex flex-wrap gap-2">
-                  {projectData.techStack.tools.map((tool, index) => (
-                    <span
-                      key={index}
-                      className="px-3 py-1 bg-orange-100 dark:bg-orange-900/30 text-orange-800 dark:text-orange-300 text-sm font-medium rounded-full"
-                    >
-                      {tool}
-                    </span>
-                  ))}
-                </div>
-              </div>
+              )}
             </div>
           </div>
         </div>
