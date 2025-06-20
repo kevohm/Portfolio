@@ -6,6 +6,7 @@ import Experience from "./sections/Experience";
 import MenuPopup from "./sections/MenuPopup";
 import Projects from "./sections/Projects";
 import { useAppContext } from "./context/contextApi";
+import SingleProject from "./sections/SingleProject";
 
 function App() {
   const {isOpen} = useAppContext()
@@ -19,6 +20,7 @@ function App() {
           <Route path="/articles" element={<Articles />} />
           <Route path="/experience" element={<Experience />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/projects/:projectId" element={<SingleProject/>} />
         </Routes>
       </BrowserRouter>
     </div>

@@ -1,6 +1,7 @@
+import profileImage from "../assets/passportPhoto.png";
+import TypingAnimation from "../components/TypingAnimation";
 import Footer from "./Footer";
 import Header from "./Header";
-import profileImage from "../assets/passportPhoto.png"
 
 const About = () => {
   return (
@@ -20,45 +21,61 @@ const About = () => {
                   <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
                     <div className="justify-self-center lg:pl-20">
                       <div className="max-w-xs px-2.5 lg:max-w-none">
-                        <img alt="profile" loading="lazy" width="750" height="429"  className="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800" style={{color:"transparent"}} src={profileImage}/>
+                        <img
+                          alt="profile"
+                          loading="lazy"
+                          width="750"
+                          height="429"
+                          className="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
+                          style={{ color: "transparent" }}
+                          src={profileImage}
+                        />
                       </div>
                     </div>
                     <div className="lg:order-first lg:row-span-2">
-                      <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-                          My name is Kevin Kipkemboi, a software engineer.
-                      </h1>
+                      <TypingAnimation
+                        text={
+                          "I'm Kevin Kipkemboi, a passionate software engineer."
+                        }
+                        element={(content) => (
+                          <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
+                            {content}
+                          </h1>
+                        )}
+                      />
+
                       {/* <h1 className=" border border-green-100 text-green-600 font-bold px-3 rounded-xl mt-5 py-2 text-base">
                          Bsc. Mathematics(pure mathematics) and computer science
                       </h1> */}
                       <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
                         <p>
-                          My education and training have given me a deep
-                          understanding of algorithms, data structures, and
-                          software development principles, allowing me to build
-                          efficient and effective software systems.
-                        </p>
+                          {" "}
+                          I'm a passionate software engineer with a strong
+                          foundation in algorithms, data structures, and modern
+                          development principles. My education and hands-on
+                          experience enable me to build efficient, scalable, and
+                          impactful software systems.{" "}
+                        </p>{" "}
                         <p>
-                          I thrive in collaborative environments and am eager to
+                          {" "}
+                          I thrive in collaborative environments and am driven
+                          by curiosity and continuous learning. With a sharp eye
+                          for detail and a love for innovation, I aim to
                           contribute to projects that push the boundaries of
-                          technology. With a keen eye for detail and a
-                          commitment to continuous learning, I am dedicated to
-                          helping brands grow by leveraging the latest
-                          advancements in software engineering.
-                        </p>
+                          technology and help brands grow.{" "}
+                        </p>{" "}
                         <p>
-                          With a deep passion for coding, I spend most of my day
-                          experimenting with HTML, CSS, and JavaScript, diving
-                          into its vast array of frameworks and libraries such
-                          as React, TypeScript, and Next.js. The thrill of
-                          solving problems and learning something new each day
-                          keeps me motivated and engaged in this ever-evolving
-                          field.
+                          {" "}
+                          Most days, you'll find me deep in code—exploring HTML,
+                          CSS, JavaScript, and frameworks like React,
+                          TypeScript, and Next.js. I enjoy the challenge of
+                          solving complex problems and staying on the cutting
+                          edge of web development.{" "}
                         </p>
                       </div>
                     </div>
                     <div className="lg:pl-20">
                       <ul role="list">
-
                         <li className="mt-4 flex">
                           <a
                             target="_blank "
@@ -151,7 +168,7 @@ const About = () => {
             </div>
           </div>
         </main>
-        <Footer/>
+        <Footer />
       </div>
     </div>
   );
