@@ -14,47 +14,30 @@ export const projects = [
     url: "https://stay-vacation.vercel.app/",
     img: stayvacation,
     description:
-      "StayVacation is a full-stack MERN vacation rental platform with M-Pesa mobile money integration, designed to streamline bookings and payments for users in regions where mobile money is widely adopted.",
-    features: [
-      "M-Pesa Integration via Safaricom Daraja API",
-      "JWT-based authentication with password encryption",
-      "Property search by price, location, and amenities",
-      "Booking history and reservation management",
-      "Responsive mobile-first design",
+      "A full-stack MERN vacation rental platform with M-Pesa integration, enabling seamless booking and mobile payments.",
+      features: [
+      "Mobile money payments via M-Pesa (Daraja API)",
+      "JWT-based authentication with encrypted passwords",
+      "Property search by price, location, and features",
+      "Booking history with reservation management",
+      "Mobile-first responsive design",
       "Admin dashboard to manage listings and users",
     ],
     techStack: {
-      frontend: [
-        "React",
-        "React Router",
-        "Context API",
-        "Axios",
-        "Tailwind CSS",
-      ],
-      backend: [
-        "Node.js",
-        "Express",
-        "MongoDB",
-        "Mongoose",
-        "JWT",
-        "Bcrypt",
-        "M-Pesa API",
-      ],
-      tools: ["Git", "GitHub", "Postman", "Render", "Vercel"],
+      frontend: ["React", "React Router", "Context API", "Axios", "Tailwind CSS"],
+      backend: ["Node.js", "Express", "MongoDB", "Mongoose", "JWT", "Bcrypt", "M-Pesa API"],
+      tools: ["git", "GitHub", "Postman", "Render", "Vercel"],
     },
     demo: "https://stay-vacation.vercel.app/",
     repo: "https://github.com/kevohm/stay_vacation",
     challenges: [
       {
-        challenge:
-          "Integrating M-Pesa required working around limited sandbox capabilities and handling delayed callbacks from Safaricom's API.",
-        solution:
-          "Created robust error-handling flows and fallback payment states to handle edge cases and test scenarios.",
+        challenge: "Limited sandbox capabilities and delayed API callbacks from Safaricom.",
+        solution: "Implemented fallback states and error handling to ensure smooth payments.",
       },
       {
-        challenge: "Syncing booking availability in real time.",
-        solution:
-          "Used database transactions and atomic updates with Mongoose to ensure data consistency.",
+        challenge: "Maintaining booking consistency in real-time.",
+        solution: "Used database transactions and atomic updates with Mongoose.",
       },
     ],
   },
@@ -64,30 +47,28 @@ export const projects = [
     url: "https://nawiricms.co.ke/",
     img: nawiricms,
     description:
-      "Nawiri CMS is a credit management system built for finance companies to manage loans, clients, and repayments effectively.",
+      "A credit management platform for finance companies to manage loans, clients, and repayments.",
     features: [
       "Client onboarding and loan registration",
-      "Repayment tracking and history",
+      "Repayment tracking with history",
       "Loan approval workflows",
-      "Dashboard for financial performance insights",
+      "Financial dashboard for performance insights",
     ],
     techStack: {
       frontend: ["React", "Redux", "Tailwind CSS", "Axios", "Material UI"],
       backend: ["Node.js", "Express", "Prisma", "MySQL"],
-      tools: ["Git", "GitHub", "firebase", "Postman", "Figma", "Linode", "PM2"],
+      tools: ["git", "GitHub", "Firebase", "Postman", "Figma", "Linode", "PM2"],
     },
     demo: "https://nawiricms.co.ke/",
+    repo: "https://github.com/kevohm/M-Loan",
     challenges: [
       {
-        challenge:
-          "Handling complex loan calculations and repayment schedules required careful logic and testing.",
-        solution:
-          "Created modular financial utility functions with Jest unit tests to verify calculations.",
+        challenge: "Complex loan calculations and payment schedules.",
+        solution: "Created tested financial utilities with Jest.",
       },
       {
-        challenge: "Needed a scalable dashboard for large datasets.",
-        solution:
-          "Integrated pagination and filtering on both backend and frontend using server-side parameters.",
+        challenge: "Scalable dashboard with large data sets.",
+        solution: "Integrated pagination and server-side filtering.",
       },
     ],
   },
@@ -97,30 +78,28 @@ export const projects = [
     url: "https://clearlink-iota.vercel.app/",
     img: clearlink,
     description:
-      "Clear Link is a modern video conferencing platform offering seamless and affordable virtual meeting experiences.",
+      "A frontend video conferencing UI prototype demonstrating scheduling and responsive design.",
     features: [
-      "Video call scheduling and hosting",
-      "Responsive user interface with clean design",
-      "Basic pricing model integration",
-      "Optimized for performance and accessibility",
+      "Video call scheduling UI",
+      "Responsive and clean interface",
+      "Basic pricing page layout",
+      "Performance and accessibility optimized",
     ],
     techStack: {
       frontend: ["React", "Tailwind CSS"],
       backend: [],
-      tools: ["Git", "GitHub", "Vercel"],
+      tools: ["git", "GitHub", "Vercel"],
     },
     demo: "https://clearlink-iota.vercel.app/",
+    repo: "https://github.com/kevohm/clearlink",
     challenges: [
       {
-        challenge:
-          "Socket.IO integration for real-time features was initially unstable.",
-        solution:
-          "Implemented connection fallbacks, reconnection logic, and server load balancing strategies.",
+        challenge: "Initial instability with real-time design assumptions.",
+        solution: "Focused on UI only and left Socket.IO logic for future backend integration.",
       },
       {
-        challenge: "User experience on slower networks needed improvement.",
-        solution:
-          "Added progressive loading and performance-optimized components with Next.js image handling.",
+        challenge: "Improving perceived performance.",
+        solution: "Added optimized images and layout animations.",
       },
     ],
   },
@@ -130,30 +109,28 @@ export const projects = [
     url: "https://quotes-kevohm.vercel.app/",
     img: quotes,
     description:
-      "Quotes is a web app showcasing memorable quotes from movies and TV series for Kenyan entertainment fans.",
+      "A quote discovery platform for fans of Kenyan film and TV content.",
     features: [
       "Browse and search famous quotes",
       "Categorized by movie and genre",
-      "Clean UI for content consumption",
-      "Mobile-friendly layout",
+      "Clean and simple UI",
+      "Mobile-first responsive layout",
     ],
     techStack: {
       frontend: ["React", "Tailwind CSS"],
       backend: ["External API"],
-      tools: ["Git", "GitHub", "Vercel"],
+      tools: ["git", "GitHub", "Vercel"],
     },
     demo: "https://quotes-kevohm.vercel.app/",
+    repo: "https://github.com/kevohm/quotes",
     challenges: [
       {
-        challenge:
-          "Organizing quotes with relational context was challenging using a document-based DB.",
-        solution:
-          "Implemented referencing within MongoDB and efficient aggregation queries.",
+        challenge: "Organizing quote data using MongoDB.",
+        solution: "Used document references and aggregation queries.",
       },
       {
-        challenge: "User search experience was initially slow and cluttered.",
-        solution:
-          "Added debounced search and simple fuzzy matching with regex.",
+        challenge: "Search experience was laggy and inaccurate.",
+        solution: "Added debounced search and basic fuzzy matching.",
       },
     ],
   },
@@ -163,31 +140,28 @@ export const projects = [
     url: "https://liquourlogic.co.ke/",
     img: dukatrack,
     description:
-      "Duka Track is a POS system that simplifies inventory and sales management for retail businesses through real-time data and alerts.",
+      "A POS system for real-time inventory, payments, and analytics for retail stores.",
     features: [
-      "Inventory management and stock alerts",
-      "Payment tracking with detailed reports",
-      "Real-time sales analytics",
-      "Responsive and intuitive dashboard",
+      "Inventory tracking and stock alerts",
+      "Payment recording with financial reports",
+      "Live sales analytics dashboard",
+      "Intuitive, responsive UI",
     ],
     techStack: {
       frontend: ["React", "React Query", "Tailwind CSS", "Axios", "Material UI"],
       backend: ["Node.js", "Express", "Prisma", "MySQL"],
-      tools: ["Git", "GitHub", "firebase", "Postman", "Figma", "Linode", "PM2"],
+      tools: ["git", "GitHub", "Firebase", "Postman", "Figma", "Linode", "PM2"],
     },
     demo: "https://liquourlogic.co.ke/",
+    repo: "https://github.com/kevohm/local-pos",
     challenges: [
       {
-        challenge:
-          "Syncing inventory updates across multiple users caused conflicts.",
-        solution:
-          "Added optimistic UI updates with backend validation and conflict resolution.",
+        challenge: "Inventory conflicts from multiple concurrent users.",
+        solution: "Implemented optimistic UI and backend validation.",
       },
       {
-        challenge:
-          "Visualizing financial data for non-technical users was tricky.",
-        solution:
-          "Integrated chart libraries (e.g., Chart.js) with simplified labels and filter toggles.",
+        challenge: "Simplifying data visualizations for non-tech users.",
+        solution: "Used Chart.js with labeled filters and toggles.",
       },
     ],
   },
@@ -197,30 +171,28 @@ export const projects = [
     url: "https://caffee-beta.vercel.app/",
     img: caffee,
     description:
-      "Caffee is a modern coffee shop website that showcases the menu, location, and contact information with a clean and responsive design.",
+      "A modern landing page for a coffee shop, showcasing menu, location, and contact features.",
     features: [
-      "Responsive design for mobile and desktop",
-      "Menu display with images and descriptions",
+      "Responsive design for all screen sizes",
+      "Visual menu with images and descriptions",
       "Location map integration",
-      "Contact form for inquiries",
+      "Contact form with inquiry routing",
     ],
     techStack: {
       frontend: ["React", "Tailwind CSS"],
       backend: [],
-      tools: ["Git", "GitHub", "Vercel", "Figma"],
+      tools: ["git", "GitHub", "Vercel", "Figma"],
     },
     demo: "https://caffee-beta.vercel.app/",
+    repo: "https://github.com/kevohm/caffee",
     challenges: [
       {
-        challenge:
-          "Ensuring responsive design across various devices was challenging.",
-        solution:
-          "Utilized Tailwind CSS for utility-first responsive design and tested on multiple screen sizes.",
+        challenge: "Ensuring pixel-perfect design match.",
+        solution: "Implemented based on Figma specs with Tailwind utilities.",
       },
       {
-        challenge: "Implementing pixel perfect UI as per the design",
-        solution:
-          "Used Figma for design handoff and implemented components with precise CSS styling.",
+        challenge: "Cross-device responsiveness.",
+        solution: "Tested across breakpoints using utility-first layout structure.",
       },
     ],
   },
@@ -230,31 +202,29 @@ export const projects = [
     url: "https://greenbin-jade.vercel.app/",
     img: greenbin,
     description:
-      "GreenBin Foundation is a non-profit organization dedicated to promoting environmental responsibility through innovative solutions, including research, education, and sustainable practices. The website provides an engaging platform for users to learn, join initiatives, and support sustainability efforts.",
+      "A non-profit platform promoting environmental awareness and sustainability initiatives.",
     features: [
-      "Mission and vision section to educate the public",
-      "Call-to-action to join environmental programs",
-      "Informative sections on research, education, and innovation",
-      "Responsive layout optimized for accessibility",
-      "Contact and support section for donations or volunteering",
+      "Mission and education sections",
+      "Join and support program calls to action",
+      "Research and innovation highlights",
+      "Accessible and mobile-first design",
+      "Donation and volunteer contact options",
     ],
     techStack: {
       frontend: ["React", "Tailwind CSS"],
       backend: [],
-      tools: ["Git", "GitHub", "Vercel", "Figma"],
+      tools: ["git", "GitHub", "Vercel", "Figma"],
     },
     demo: "https://greenbin-jade.vercel.app/",
+    repo: "https://github.com/kevohm/greenbin",
     challenges: [
       {
-        challenge:
-          "Designing an engaging layout to communicate a non-profit mission effectively.",
-        solution:
-          "Collaborated using Figma for clear visual hierarchy and applied Tailwind CSS to build an accessible, clean UI.",
+        challenge: "Conveying the non-profit's message clearly.",
+        solution: "Used structured layout and hierarchy with Figma planning.",
       },
       {
-        challenge: "Making the site inclusive and responsive across devices.",
-        solution:
-          "Applied mobile-first development and ARIA attributes for accessibility compliance.",
+        challenge: "Ensuring inclusivity and responsiveness.",
+        solution: "Applied ARIA roles and tested mobile-first accessibility.",
       },
     ],
   },
@@ -262,49 +232,36 @@ export const projects = [
     id: "streamweb",
     title: "StreamWeb",
     url: "https://streamweb.vercel.app/",
-    img: streamweb, // import streamweb from "./assets/streamweb.png";
+    img: streamweb,
     description:
-      "StreamWeb is a Netflix-style streaming platform built with Angular and NestJS. It aggregates movie and TV show data from TMDB, IMDb, and YouTube APIs, providing users with an immersive interface to explore, search, and preview trending content.",
+      "A Netflix-style movie streaming platform using Angular and NestJS with TMDB, IMDb, and YouTube integration.",
     features: [
-      "Angular-based responsive UI with Netflix-style layout",
-      "TMDB integration for movie/series metadata and images",
-      "YouTube Data API for embedded trailers",
-      "IMDb ratings and reviews",
+      "Angular UI with responsive Netflix layout",
+      "TMDB for movie/TV metadata",
+      "YouTube trailers embedded",
+      "IMDb ratings and summaries",
       "Search by title, genre, or rating",
-      "Modal-based previews and trailer playback",
+      "Modal previews and trailer playback",
     ],
     techStack: {
       frontend: ["Angular", "RxJS", "Tailwind CSS"],
       backend: ["NestJS", "Node.js", "Express"],
-      tools: [
-        "Git",
-        "GitHub",
-        "Vercel",
-        "TMDB API",
-        "YouTube Data API",
-        "IMDb API",
-        "Postman",
-      ],
+      tools: ["git", "GitHub", "Vercel", "TMDB API", "YouTube Data API", "IMDb API", "Postman"],
     },
+    repo: "https://github.com/kevohm/streamweb",
     demo: "https://streamweb.vercel.app/",
     challenges: [
       {
-        challenge:
-          "Integrating multiple third-party APIs (TMDB, YouTube, IMDb) while maintaining a unified data structure.",
-        solution:
-          "Built a NestJS service layer that normalized external API responses before sending to the frontend, simplifying component data binding.",
+        challenge: "Managing inconsistent data across third-party APIs.",
+        solution: "Normalized responses with a NestJS service layer.",
       },
       {
-        challenge:
-          "Creating a Netflix-like interface with hover effects, trailers, and modals in Angular.",
-        solution:
-          "Used Angular animations and modular components with Tailwind CSS utilities to achieve smooth interactivity and responsive layouts.",
+        challenge: "Replicating Netflix’s interactive UI.",
+        solution: "Used Angular animations and modular Tailwind components.",
       },
       {
-        challenge:
-          "Avoiding API quota limits and handling inconsistencies in data (e.g., missing trailers or ratings).",
-        solution:
-          "Implemented caching strategies and graceful fallbacks for missing or incomplete API data, along with error-bound UI components.",
+        challenge: "API quota limits and missing data.",
+        solution: "Cached API responses and handled fallback scenarios.",
       },
     ],
   },

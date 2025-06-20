@@ -9,11 +9,11 @@ const DownloadCVButton = () => {
     <a
       href={cv} // Replace with the actual path to your CV
       download="kevin_kipkemboi_cv.pdf"
-      className="flex items-center p-3 py-2 text-sm font-medium text-teal-500  bg-white/90 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:ring-white/10 rounded-lg transition-colors duration-300"
+      className="group flex items-center p-3 py-2 text-sm font-medium text-teal-500 bg-white/90 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:ring-white/10 rounded-lg transition-all duration-300 hover:bg-white hover:shadow-xl hover:shadow-zinc-800/10 hover:ring-zinc-900/10 hover:scale-[1.02] hover:-translate-y-0.5 dark:hover:bg-zinc-700/90 dark:hover:ring-white/20 dark:hover:shadow-2xl dark:hover:shadow-black/25 active:scale-[0.98] active:translate-y-0"
       title="Download Resume"
     >
       {/* Icon */}
-      <FaDownload className="text-sm" />
+      <FaDownload className="text-sm transition-transform duration-300 group-hover:scale-110 group-hover:rotate-12" />
       
       {/* Text (hidden on small screens) */}
       <span className="ml-2 hidden sm:inline">Resume</span>
