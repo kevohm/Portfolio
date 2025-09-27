@@ -8,7 +8,7 @@ const Experience = () => {
       duration: "July, 2025 – present",
       title: "Frontend Engineer at Zola Technologies",
       roles: [
-        "	Developed reusable and modular React.js components to improve code maintainability.",
+        "Developed reusable and modular React.js components to improve code maintainability.",
         "Led improvements in user experience and translated ideas into final product designs.",
         "Implemented caching to reduce the number of requests.",
       ],
