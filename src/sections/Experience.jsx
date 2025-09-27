@@ -4,6 +4,24 @@ import Header from "./Header";
 
 const Experience = () => {
   const experiences = [
+     {
+      duration: "July, 2025 – present",
+      title: "Frontend Engineer at Zola Technologies",
+      roles: [
+        "	Developed reusable and modular React.js components to improve code maintainability.",
+        "Led improvements in user experience and translated ideas into final product designs.",
+        "Implemented caching to reduce the number of requests.",
+      ],
+    },
+       {
+      duration: "April, 2025 – July, 2025",
+      title: "Frontend Engineering internship at Zola Technologies",
+      roles: [
+        "Collaborated with backend engineers and UI/UX designers to meet functional and design specifications.",
+        "Analyzed and optimized React components, improving performance and enhancing accessibility compliance.",
+        "Redesigned the user interface and enhanced user experience, which led to expanded responsibilities.",
+      ],
+    },
     {
       duration: "May 2024 – Present",
       title: "Frontend Developer at Tugrow",
@@ -17,7 +35,7 @@ const Experience = () => {
       ],
     },
     {
-      duration: "June 2024 – Present",
+      duration: "June 2024 – April 2025",
       title: "Junior Software Engineer at Alpha Nex Softwares",
       roles: [
         "Reduced average transaction time by 40% with a React-based UI for quick item selection and one-click M-Pesa payment initiation.",
