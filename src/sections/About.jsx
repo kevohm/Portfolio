@@ -50,28 +50,25 @@ const About = () => {
                       <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
                         <p>
                           {" "}
-                          I'm a passionate software engineer with a strong
-                          foundation in algorithms, data structures, and modern
-                          development principles. My education and hands-on
-                          experience enable me to build efficient, scalable, and
-                          impactful software systems.{" "}
+                          I am a passionate software engineer skilled in
+                          algorithms, data structures, and modern development. I
+                          enjoy learning, collaborating, and building efficient,
+                          scalable solutions that drive innovation and growth.{" "}
                         </p>{" "}
                         <p>
                           {" "}
-                          I thrive in collaborative environments and am driven
-                          by curiosity and continuous learning. With a sharp eye
-                          for detail and a love for innovation, I aim to
-                          contribute to projects that push the boundaries of
-                          technology and help brands grow.{" "}
+                          I work mainly with HTML, CSS, JavaScript, React,
+                          TypeScript, and Next.js. I love solving problems and
+                          staying current with the latest in web development.{" "}
                         </p>{" "}
-                        <p>
+                        {/* <p>
                           {" "}
                           Most days, you'll find me deep in code—exploring HTML,
                           CSS, JavaScript, and frameworks like React,
                           TypeScript, and Next.js. I enjoy the challenge of
                           solving complex problems and staying on the cutting
                           edge of web development.{" "}
-                        </p>
+                        </p> */}
                       </div>
                     </div>
                     <div className="lg:pl-20">

@@ -3,6 +3,10 @@ import { Link } from "react-router-dom";
 import { projects } from "../projects";
 import Footer from "./Footer";
 import Header from "./Header";
+import * as Dialog from "@radix-ui/react-dialog";
+import { ExternalLink, Github } from "lucide-react";
+
+const MAX_VISIBLE_TAGS = 3;
 
 const Projects = () => {
   const [selectedFilter, setSelectedFilter] = useState("All");
@@ -107,13 +111,17 @@ const Projects = () => {
                   </div>
 
                   <div className="mt-16 sm:mt-20">
-                    <ul
-                      role="list"
+                    <div
                       className="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3"
                     >
                       {filteredProjects.map((project, index) => {
+                        const tags = [
+                          ...project?.techStack?.backend,
+                          ...project?.techStack?.frontend,
+                          ...project?.techStack?.tools,
+                        ];
                         return (
-                          <li
+                          <div
                             key={project.title}
                             className="group relative flex flex-col items-start"
                           >
@@ -140,42 +148,82 @@ const Projects = () => {
                                 {project.description}
                               </p>
                             </Link>
-
                             {/* Project Tags */}
-                            {project.tags && project.tags.length > 0 && (
-                              <div className="relative z-10 mt-3 flex flex-wrap gap-1">
-                                {project.tags.map((tag) => (
-                                  <span
-                                    key={tag}
-                                    className="px-2 py-1 text-xs font-medium bg-green-100 text-green-800 rounded-md dark:bg-green-900/30 dark:text-green-400"
-                                  >
-                                    {tag}
-                                  </span>
-                                ))}
-                              </div>
-                            )}
+                            <div className="my-3 z-20">
+                              {tags && tags.length > 0 && (
+                                <div className="relative z-10 flex flex-wrap gap-1">
+                                  {tags
+                                    .slice(0, MAX_VISIBLE_TAGS)
+                                    .map((tag) => (
+                                      <span
+                                        key={tag}
+                                        className="px-2 py-1 text-xs font-medium bg-green-100 text-green-800 rounded-md dark:bg-green-900/30 dark:text-green-400"
+                                      >
+                                        {tag}
+                                      </span>
+                                    ))}
 
-                            <a
-                              target="_blank"
-                              className="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-teal-500 dark:text-zinc-200"
-                              href={project.url}
-                            >
-                              <svg
-                                viewBox="0 0 24 24"
-                                aria-hidden="true"
-                                className="h-6 w-6 flex-none"
+                                  {tags.length > MAX_VISIBLE_TAGS && (
+                                    <Dialog.Root>
+                                      <Dialog.Trigger asChild>
+                                        <button className="px-2 py-1 text-xs font-medium bg-gray-200 text-gray-500/5 rounded-md dark:bg-gray-500/5 dark:text-gray-300">
+                                          +{tags.length - MAX_VISIBLE_TAGS} more
+                                        </button>
+                                      </Dialog.Trigger>
+
+                                      <Dialog.Portal>
+                                        <Dialog.Overlay className="w-full h-full !z-[200] fixed inset-0 bg-black/50 backdrop-blur-sm" />
+                                        <Dialog.Content className="!z-[2000] fixed top-1/2 left-1/2 w-96 -translate-x-1/2 -translate-y-1/2 rounded-lg bg-white dark:bg-slate-900 p-4 shadow-lg">
+                                          <Dialog.Title className="font-semibold text-lg mb-3 text-white">
+                                            All Tags
+                                          </Dialog.Title>
+
+                                          <div className="flex flex-wrap gap-2">
+                                            {tags.map((tag) => (
+                                              <span
+                                                key={tag}
+                                                className="px-2 py-1 text-xs font-medium bg-green-100 text-green-800 rounded-md dark:bg-green-900/30 dark:text-green-400"
+                                              >
+                                                {tag}
+                                              </span>
+                                            ))}
+                                          </div>
+
+                                          <Dialog.Close asChild>
+                                            <button className="mt-4 w-full py-2 text-sm rounded-md bg-green-600 text-white dark:bg-green-700">
+                                              Close
+                                            </button>
+                                          </Dialog.Close>
+                                        </Dialog.Content>
+                                      </Dialog.Portal>
+                                    </Dialog.Root>
+                                  )}
+                                </div>
+                              )}
+                            </div>
+                            <div className="flex flex-wrap gap-4">
+                              <a
+                                href={project.demo}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="group flex items-center p-3 py-2 text-sm font-medium text-blue-500 bg-white/90 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-900 dark:ring-white/10 rounded-lg transition-all duration-300 hover:bg-white hover:shadow-xl hover:shadow-zinc-800/10 hover:ring-zinc-900/10 hover:scale-[1.02] hover:-translate-y-0.5 dark:hover:bg-zinc-700/90 dark:hover:ring-white/20 dark:hover:shadow-2xl dark:hover:shadow-black/25 active:scale-[0.98] active:translate-y-0"
                               >
-                                <path
-                                  d="M15.712 11.823a.75.75 0 1 0 1.06 1.06l-1.06-1.06Zm-4.95 1.768a.75.75 0 0 0 1.06-1.06l-1.06 1.06Zm-2.475-1.414a.75.75 0 1 0-1.06-1.06l1.06 1.06Zm4.95-1.768a.75.75 0 1 0-1.06 1.06l1.06-1.06Zm3.359.53-.884.884 1.06 1.06.885-.883-1.061-1.06Zm-4.95-2.12 1.414-1.415L12 6.344l-1.415 1.413 1.061 1.061Zm0 3.535a2.5 2.5 0 0 1 0-3.536l-1.06-1.06a4 4 0 0 0 0 5.656l1.06-1.06Zm4.95-4.95a2.5 2.5 0 0 1 0 3.535L17.656 12a4 4 0 0 0 0-5.657l-1.06 1.06Zm1.06-1.06a4 4 0 0 0-5.656 0l1.06 1.06a2.5 2.5 0 0 1 3.536 0l1.06-1.06Zm-7.07 7.07.176.177 1.06-1.06-.176-.177-1.06 1.06Zm-3.183-.353.884-.884-1.06-1.06-.884.883 1.06 1.06Zm4.95 2.121-1.414 1.414 1.06 1.06 1.415-1.413-1.06-1.061Zm0-3.536a2.5 2.5 0 0 1 0 3.536l1.06 1.06a4 4 0 0 0 0-5.656l-1.06 1.06Zm-4.95 4.95a2.5 2.5 0 0 1 0-3.535L6.344 12a4 4 0 0 0 0 5.656l1.06-1.06Zm-1.06 1.06a4 4 0 0 0 5.657 0l-1.061-1.06a2.5 2.5 0 0 1-3.535 0l-1.061 1.06Zm7.07-7.07-.176-.177-1.06 1.06.176.178 1.06-1.061Z"
-                                  fill="currentColor"
-                                ></path>
-                              </svg>
-                              <span className="ml-2">{project.url}</span>
-                            </a>
-                          </li>
+                                <ExternalLink className="h-4 w-4 transition-transform duration-300 " />
+                              </a>
+                              <a
+                                href={project.repo}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="group flex items-center p-3 py-2 text-sm font-medium text-teal-500 bg-white/90 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-900 dark:ring-white/10 rounded-lg transition-all duration-300 hover:bg-white hover:shadow-xl hover:shadow-zinc-800/10 hover:ring-zinc-900/10 hover:scale-[1.02] hover:-translate-y-0.5 dark:hover:bg-zinc-700/90 dark:hover:ring-white/20 dark:hover:shadow-2xl dark:hover:shadow-black/25 active:scale-[0.98] active:translate-y-0"
+                              >
+                                <Github className="h-4 w-4 transition-transform duration-300" />
+                            
+                              </a>
+                            </div>
+                          </div>
                         );
                       })}
-                    </ul>
+                    </div>
                   </div>
                 </div>
               </div>

@@ -15,7 +15,7 @@ export const projects = [
     img: stayvacation,
     description:
       "A full-stack MERN vacation rental platform with M-Pesa integration, enabling seamless booking and mobile payments.",
-      features: [
+    features: [
       "Mobile money payments via M-Pesa (Daraja API)",
       "JWT-based authentication with encrypted passwords",
       "Property search by price, location, and features",
@@ -24,54 +24,71 @@ export const projects = [
       "Admin dashboard to manage listings and users",
     ],
     techStack: {
-      frontend: ["React", "React Router", "Context API", "Axios", "Tailwind CSS"],
-      backend: ["Node.js", "Express", "MongoDB", "Mongoose", "JWT", "Bcrypt", "M-Pesa API"],
+      frontend: [
+        "React",
+        "React Router",
+        "Context API",
+        "Axios",
+        "Tailwind CSS",
+      ],
+      backend: [
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "Mongoose",
+        "JWT",
+        "Bcrypt",
+        "M-Pesa API",
+      ],
       tools: ["git", "GitHub", "Postman", "Render", "Vercel"],
     },
     demo: "https://stay-vacation.vercel.app/",
     repo: "https://github.com/kevohm/stay_vacation",
     challenges: [
       {
-        challenge: "Limited sandbox capabilities and delayed API callbacks from Safaricom.",
-        solution: "Implemented fallback states and error handling to ensure smooth payments.",
+        challenge:
+          "Limited sandbox capabilities and delayed API callbacks from Safaricom.",
+        solution:
+          "Implemented fallback states and error handling to ensure smooth payments.",
       },
       {
         challenge: "Maintaining booking consistency in real-time.",
-        solution: "Used database transactions and atomic updates with Mongoose.",
+        solution:
+          "Used database transactions and atomic updates with Mongoose.",
       },
     ],
   },
-  {
-    id: "nawiri-cms",
-    title: "Nawiri CMS",
-    url: "https://nawiricms.co.ke/",
-    img: nawiricms,
-    description:
-      "A credit management platform for finance companies to manage loans, clients, and repayments.",
-    features: [
-      "Client onboarding and loan registration",
-      "Repayment tracking with history",
-      "Loan approval workflows",
-      "Financial dashboard for performance insights",
-    ],
-    techStack: {
-      frontend: ["React", "Redux", "Tailwind CSS", "Axios", "Material UI"],
-      backend: ["Node.js", "Express", "Prisma", "MySQL"],
-      tools: ["git", "GitHub", "Firebase", "Postman", "Figma", "Linode", "PM2"],
-    },
-    demo: "https://nawiricms.co.ke/",
-    repo: "https://github.com/kevohm/M-Loan",
-    challenges: [
-      {
-        challenge: "Complex loan calculations and payment schedules.",
-        solution: "Created tested financial utilities with Jest.",
-      },
-      {
-        challenge: "Scalable dashboard with large data sets.",
-        solution: "Integrated pagination and server-side filtering.",
-      },
-    ],
-  },
+  // {
+  //   id: "nawiri-cms",
+  //   title: "Nawiri CMS",
+  //   url: "https://nawiricms.co.ke/",
+  //   img: nawiricms,
+  //   description:
+  //     "A credit management platform for finance companies to manage loans, clients, and repayments.",
+  //   features: [
+  //     "Client onboarding and loan registration",
+  //     "Repayment tracking with history",
+  //     "Loan approval workflows",
+  //     "Financial dashboard for performance insights",
+  //   ],
+  //   techStack: {
+  //     frontend: ["React", "Redux", "Tailwind CSS", "Axios", "Material UI"],
+  //     backend: ["Node.js", "Express", "Prisma", "MySQL"],
+  //     tools: ["git", "GitHub", "Firebase", "Postman", "Figma", "Linode", "PM2"],
+  //   },
+  //   demo: "https://nawiricms.co.ke/",
+  //   repo: "https://github.com/kevohm/M-Loan",
+  //   challenges: [
+  //     {
+  //       challenge: "Complex loan calculations and payment schedules.",
+  //       solution: "Created tested financial utilities with Jest.",
+  //     },
+  //     {
+  //       challenge: "Scalable dashboard with large data sets.",
+  //       solution: "Integrated pagination and server-side filtering.",
+  //     },
+  //   ],
+  // },
   {
     id: "clear-link",
     title: "Clear Link",
@@ -95,7 +112,8 @@ export const projects = [
     challenges: [
       {
         challenge: "Initial instability with real-time design assumptions.",
-        solution: "Focused on UI only and left Socket.IO logic for future backend integration.",
+        solution:
+          "Focused on UI only and left Socket.IO logic for future backend integration.",
       },
       {
         challenge: "Improving perceived performance.",
@@ -134,37 +152,37 @@ export const projects = [
       },
     ],
   },
-  {
-    id: "duka-track",
-    title: "Duka Track",
-    url: "https://liquourlogic.co.ke/",
-    img: dukatrack,
-    description:
-      "A POS system for real-time inventory, payments, and analytics for retail stores.",
-    features: [
-      "Inventory tracking and stock alerts",
-      "Payment recording with financial reports",
-      "Live sales analytics dashboard",
-      "Intuitive, responsive UI",
-    ],
-    techStack: {
-      frontend: ["React", "React Query", "Tailwind CSS", "Axios", "Material UI"],
-      backend: ["Node.js", "Express", "Prisma", "MySQL"],
-      tools: ["git", "GitHub", "Firebase", "Postman", "Figma", "Linode", "PM2"],
-    },
-    demo: "https://liquourlogic.co.ke/",
-    repo: "https://github.com/kevohm/local-pos",
-    challenges: [
-      {
-        challenge: "Inventory conflicts from multiple concurrent users.",
-        solution: "Implemented optimistic UI and backend validation.",
-      },
-      {
-        challenge: "Simplifying data visualizations for non-tech users.",
-        solution: "Used Chart.js with labeled filters and toggles.",
-      },
-    ],
-  },
+  // {
+  //   id: "duka-track",
+  //   title: "Duka Track",
+  //   url: "https://liquourlogic.co.ke/",
+  //   img: dukatrack,
+  //   description:
+  //     "A POS system for real-time inventory, payments, and analytics for retail stores.",
+  //   features: [
+  //     "Inventory tracking and stock alerts",
+  //     "Payment recording with financial reports",
+  //     "Live sales analytics dashboard",
+  //     "Intuitive, responsive UI",
+  //   ],
+  //   techStack: {
+  //     frontend: ["React", "React Query", "Tailwind CSS", "Axios", "Material UI"],
+  //     backend: ["Node.js", "Express", "Prisma", "MySQL"],
+  //     tools: ["git", "GitHub", "Firebase", "Postman", "Figma", "Linode", "PM2"],
+  //   },
+  //   demo: "https://liquourlogic.co.ke/",
+  //   repo: "https://github.com/kevohm/local-pos",
+  //   challenges: [
+  //     {
+  //       challenge: "Inventory conflicts from multiple concurrent users.",
+  //       solution: "Implemented optimistic UI and backend validation.",
+  //     },
+  //     {
+  //       challenge: "Simplifying data visualizations for non-tech users.",
+  //       solution: "Used Chart.js with labeled filters and toggles.",
+  //     },
+  //   ],
+  // },
   {
     id: "caffee",
     title: "Caffee",
@@ -179,7 +197,7 @@ export const projects = [
       "Contact form with inquiry routing",
     ],
     techStack: {
-      frontend: ["React", "Tailwind CSS"],
+      frontend: ["React", "Tailwind CSS", "website"],
       backend: [],
       tools: ["git", "GitHub", "Vercel", "Figma"],
     },
@@ -192,7 +210,8 @@ export const projects = [
       },
       {
         challenge: "Cross-device responsiveness.",
-        solution: "Tested across breakpoints using utility-first layout structure.",
+        solution:
+          "Tested across breakpoints using utility-first layout structure.",
       },
     ],
   },
@@ -246,7 +265,15 @@ export const projects = [
     techStack: {
       frontend: ["Angular", "RxJS", "Tailwind CSS"],
       backend: ["NestJS", "Node.js", "Express"],
-      tools: ["git", "GitHub", "Vercel", "TMDB API", "YouTube Data API", "IMDb API", "Postman"],
+      tools: [
+        "git",
+        "GitHub",
+        "Vercel",
+        "TMDB API",
+        "YouTube Data API",
+        "IMDb API",
+        "Postman",
+      ],
     },
     repo: "https://github.com/kevohm/streamweb",
     demo: "https://streamweb.vercel.app/",
