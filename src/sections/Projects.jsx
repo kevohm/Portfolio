@@ -206,7 +206,7 @@ const Projects = () => {
                                 href={project.demo}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="group flex items-center p-3 py-2 text-sm font-medium text-blue-500 bg-white/90 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-900 dark:ring-white/10 rounded-lg transition-all duration-300 hover:bg-white hover:shadow-xl hover:shadow-zinc-800/10 hover:ring-zinc-900/10 hover:scale-[1.02] hover:-translate-y-0.5 dark:hover:bg-zinc-700/90 dark:hover:ring-white/20 dark:hover:shadow-2xl dark:hover:shadow-black/25 active:scale-[0.98] active:translate-y-0"
+                                className="group !z-[2000] flex items-center p-3 py-2 text-sm font-medium text-blue-500 bg-white/90 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-900 dark:ring-white/10 rounded-lg transition-all duration-300 hover:bg-white hover:shadow-xl hover:shadow-zinc-800/10 hover:ring-zinc-900/10 hover:scale-[1.02] hover:-translate-y-0.5 dark:hover:bg-zinc-700/90 dark:hover:ring-white/20 dark:hover:shadow-2xl dark:hover:shadow-black/25 active:scale-[0.98] active:translate-y-0"
                               >
                                 <ExternalLink className="h-4 w-4 transition-transform duration-300 " />
                               </a>
@@ -214,10 +214,9 @@ const Projects = () => {
                                 href={project.repo}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="group flex items-center p-3 py-2 text-sm font-medium text-teal-500 bg-white/90 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-900 dark:ring-white/10 rounded-lg transition-all duration-300 hover:bg-white hover:shadow-xl hover:shadow-zinc-800/10 hover:ring-zinc-900/10 hover:scale-[1.02] hover:-translate-y-0.5 dark:hover:bg-zinc-700/90 dark:hover:ring-white/20 dark:hover:shadow-2xl dark:hover:shadow-black/25 active:scale-[0.98] active:translate-y-0"
+                                className="group !z-[2000] flex items-center p-3 py-2 text-sm font-medium text-teal-500 bg-white/90 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-900 dark:ring-white/10 rounded-lg transition-all duration-300 hover:bg-white hover:shadow-xl hover:shadow-zinc-800/10 hover:ring-zinc-900/10 hover:scale-[1.02] hover:-translate-y-0.5 dark:hover:bg-zinc-700/90 dark:hover:ring-white/20 dark:hover:shadow-2xl dark:hover:shadow-black/25 active:scale-[0.98] active:translate-y-0"
                               >
                                 <Github className="h-4 w-4 transition-transform duration-300" />
-                            
                               </a>
                             </div>
                           </div>

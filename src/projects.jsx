@@ -6,6 +6,7 @@ import nawiricms from "./assets/nawiricms.png";
 import quotes from "./assets/quote.png";
 import stayvacation from "./assets/stayvacation.png";
 import streamweb from "./assets/streamweb.png";
+import eazyhunt from "./assets/eazyhunt.png";
 
 export const projects = [
   {
@@ -121,37 +122,37 @@ export const projects = [
       },
     ],
   },
-  {
-    id: "quotes",
-    title: "Quotes",
-    url: "https://quotes-kevohm.vercel.app/",
-    img: quotes,
-    description:
-      "A quote discovery platform for fans of Kenyan film and TV content.",
-    features: [
-      "Browse and search famous quotes",
-      "Categorized by movie and genre",
-      "Clean and simple UI",
-      "Mobile-first responsive layout",
-    ],
-    techStack: {
-      frontend: ["React", "Tailwind CSS"],
-      backend: ["External API"],
-      tools: ["git", "GitHub", "Vercel"],
-    },
-    demo: "https://quotes-kevohm.vercel.app/",
-    repo: "https://github.com/kevohm/quotes",
-    challenges: [
-      {
-        challenge: "Organizing quote data using MongoDB.",
-        solution: "Used document references and aggregation queries.",
-      },
-      {
-        challenge: "Search experience was laggy and inaccurate.",
-        solution: "Added debounced search and basic fuzzy matching.",
-      },
-    ],
-  },
+  // {
+  //   id: "quotes",
+  //   title: "Quotes",
+  //   url: "https://quotes-kevohm.vercel.app/",
+  //   img: quotes,
+  //   description:
+  //     "A quote discovery platform for fans of Kenyan film and TV content.",
+  //   features: [
+  //     "Browse and search famous quotes",
+  //     "Categorized by movie and genre",
+  //     "Clean and simple UI",
+  //     "Mobile-first responsive layout",
+  //   ],
+  //   techStack: {
+  //     frontend: ["React", "Tailwind CSS"],
+  //     backend: ["External API"],
+  //     tools: ["git", "GitHub", "Vercel"],
+  //   },
+  //   demo: "https://quotes-kevohm.vercel.app/",
+  //   repo: "https://github.com/kevohm/quotes",
+  //   challenges: [
+  //     {
+  //       challenge: "Organizing quote data using MongoDB.",
+  //       solution: "Used document references and aggregation queries.",
+  //     },
+  //     {
+  //       challenge: "Search experience was laggy and inaccurate.",
+  //       solution: "Added debounced search and basic fuzzy matching.",
+  //     },
+  //   ],
+  // },
   // {
   //   id: "duka-track",
   //   title: "Duka Track",
@@ -215,38 +216,38 @@ export const projects = [
       },
     ],
   },
-  {
-    id: "greenbin",
-    title: "GreenBin Foundation",
-    url: "https://greenbin-jade.vercel.app/",
-    img: greenbin,
-    description:
-      "A non-profit platform promoting environmental awareness and sustainability initiatives.",
-    features: [
-      "Mission and education sections",
-      "Join and support program calls to action",
-      "Research and innovation highlights",
-      "Accessible and mobile-first design",
-      "Donation and volunteer contact options",
-    ],
-    techStack: {
-      frontend: ["React", "Tailwind CSS"],
-      backend: [],
-      tools: ["git", "GitHub", "Vercel", "Figma"],
-    },
-    demo: "https://greenbin-jade.vercel.app/",
-    repo: "https://github.com/kevohm/greenbin",
-    challenges: [
-      {
-        challenge: "Conveying the non-profit's message clearly.",
-        solution: "Used structured layout and hierarchy with Figma planning.",
-      },
-      {
-        challenge: "Ensuring inclusivity and responsiveness.",
-        solution: "Applied ARIA roles and tested mobile-first accessibility.",
-      },
-    ],
-  },
+  // {
+  //   id: "greenbin",
+  //   title: "GreenBin Foundation",
+  //   url: "https://greenbin-jade.vercel.app/",
+  //   img: greenbin,
+  //   description:
+  //     "A non-profit platform promoting environmental awareness and sustainability initiatives.",
+  //   features: [
+  //     "Mission and education sections",
+  //     "Join and support program calls to action",
+  //     "Research and innovation highlights",
+  //     "Accessible and mobile-first design",
+  //     "Donation and volunteer contact options",
+  //   ],
+  //   techStack: {
+  //     frontend: ["React", "Tailwind CSS"],
+  //     backend: [],
+  //     tools: ["git", "GitHub", "Vercel", "Figma"],
+  //   },
+  //   demo: "https://greenbin-jade.vercel.app/",
+  //   repo: "https://github.com/kevohm/greenbin",
+  //   challenges: [
+  //     {
+  //       challenge: "Conveying the non-profit's message clearly.",
+  //       solution: "Used structured layout and hierarchy with Figma planning.",
+  //     },
+  //     {
+  //       challenge: "Ensuring inclusivity and responsiveness.",
+  //       solution: "Applied ARIA roles and tested mobile-first accessibility.",
+  //     },
+  //   ],
+  // },
   {
     id: "streamweb",
     title: "StreamWeb",
@@ -289,6 +290,51 @@ export const projects = [
       {
         challenge: "API quota limits and missing data.",
         solution: "Cached API responses and handled fallback scenarios.",
+      },
+    ],
+  },
+  {
+    id: "eazyhunt",
+    title: "EazyHunt",
+    url: "https://todayshunters.com/",
+    img: eazyhunt,
+    description:
+      "A real estate management platform that connects property owners, managers, and tenants with advanced analytics and booking tools.",
+    features: [
+      "Apartment and room listings with media galleries",
+      "Real-time booking and tenant management",
+      "Automated payment tracking and reporting",
+      "Role-based dashboards for admins, agents, and users",
+    ],
+    techStack: {
+      frontend: ["React", "Remix", "Tailwind CSS", "Zod", "React Query"],
+      backend: ["Node.js", "Express", "Prisma", "MySQL"],
+      tools: ["GitHub", "Digital Ocean", "Postman", "Figma", "Vercel", "PM2"],
+    },
+    demo: "https://eazyhunt.co.ke/",
+    repo: "https://github.com/kevohm/eazy-hub ", // update if repo name differs
+    challenges: [
+      {
+        challenge:
+          "Maintaining form validation and data consistency across multi-step onboarding.",
+        solution:
+          "Used Zod for schema validation and the Context API for shared state management.",
+      },
+      {
+        challenge: "Handling image uploads, optimization, and secure delivery.",
+        solution:
+          "Developed an Nginx-based CDN to handle caching and optimize image delivery based on client requirements.",
+      },
+      {
+        challenge: "Reducing page load times.",
+        solution:
+          "Utilized Cloudinary as a CDN for site images and implemented responsive image transformations based on screen size.",
+      },
+      {
+        challenge:
+          "Enhancing user experience for property managers and tenants.",
+        solution:
+          "Built dynamic dashboards with real-time analytics, booking insights, and responsive layouts for seamless navigation.",
       },
     ],
   },
