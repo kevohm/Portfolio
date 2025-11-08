@@ -20,15 +20,16 @@ const About = () => {
                 <div className="mx-auto max-w-2xl lg:max-w-5xl">
                   <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
                     <div className="justify-self-center lg:pl-20">
-                      <div className="max-w-xs px-2.5 lg:max-w-none">
+                      <div className="max-w-xs px-2.5 lg:max-w-none group">
                         <img
                           alt="profile"
                           loading="lazy"
                           width="750"
                           height="429"
-                          className="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
-                          style={{ color: "transparent" }}
                           src={profileImage}
+                          className="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800 
+               transition-transform duration-500 ease-out group-hover:scale-[102%] group-hover:rotate-[4deg] group-hover:shadow-xl"
+                          style={{ color: "transparent" }}
                         />
                       </div>
                     </div>
