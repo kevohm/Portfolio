@@ -4,22 +4,16 @@ import Header from "./Header";
 
 const Experience = () => {
   const experiences = [
-     {
-      duration: "July, 2025 – present",
+    {
+      duration: "April, 2025 – Present",
       title: "Frontend Engineer at Zola Technologies",
-      roles: [
-        "Developed reusable and modular React.js components to improve code maintainability.",
-        "Led improvements in user experience and translated ideas into final product designs.",
-        "Implemented caching to reduce the number of requests.",
-      ],
-    },
-       {
-      duration: "April, 2025 – July, 2025",
-      title: "Frontend Engineering internship at Zola Technologies",
       roles: [
         "Collaborated with backend engineers and UI/UX designers to meet functional and design specifications.",
         "Analyzed and optimized React components, improving performance and enhancing accessibility compliance.",
         "Redesigned the user interface and enhanced user experience, which led to expanded responsibilities.",
+        "Developed reusable and modular React.js components to improve code maintainability.",
+        "Led improvements in user experience and translated ideas into final product designs.",
+        "Implemented caching to reduce the number of requests.",
       ],
     },
     {
@@ -27,16 +21,15 @@ const Experience = () => {
       title: "Frontend Developer at Tugrow",
       roles: [
         "Designed mock-ups for a resume application",
-        "Developed UI components using NextJS together with Redux for state management",
+        "Developed UI components using NextJS",
         "Came up with branding strategies and even a cool company name",
         "Collaborated with cross-functional teams to deliver high-quality features",
         "Implemented responsive design principles to ensure compatibility across devices",
-        "Enhanced user experience by optimizing performance and accessibility",
       ],
     },
     {
-      duration: "June 2024 – April 2025",
-      title: "Junior Software Engineer at Alpha Nex Softwares",
+      duration: "February 2024 – April 2025",
+      title: "Full Stack Software Engineer at Alpha Nex Softwares",
       roles: [
         "Reduced average transaction time by 40% with a React-based UI for quick item selection and one-click M-Pesa payment initiation.",
         "Built an automated stock tracking system with low-stock alerts, cutting inventory discrepancies by 60%.",
@@ -46,20 +39,6 @@ const Experience = () => {
         "Successfully implemented Safaricom’s Daraja API to process mobile money transactions, reducing reliance on cash and credit cards for small businesses.",
         "Conducted research on Job Scheduling and Background tasks for creation of an email notification system using Nunjucks, Redis, and BullMQ.",
         "Streamlined deployment processes using CI/CD pipelines for faster delivery of updates",
-      ],
-    },
-    {
-      duration: "Feb 2024 – June 2024",
-      title: "Software Engineering Internship at Alpha Nex Softwares",
-      roles: [
-        "Developed a credit management system using Node.js, MySQL, and React.js, which improved loan tracking and led to recovery of loans through legal process.",
-        "Improved SEO, leading to better search rankings and increased website traffic.",
-        "Designed a state tracker to manage loan status transitions.",
-        "Implemented React Query to keep frontend data in sync with the backend.",
-        "Used JWT with refresh tokens and rate limiting to protect API endpoints.",
-        "Collaborated with peers using GitHub Projects to deliver features ahead of deadlines.",
-        "Indexed frequently queried columns to reduce response times by 40%.",
-        "Integrated third-party APIs to enhance application functionality and user engagement",
       ],
     },
     {

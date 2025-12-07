@@ -7,6 +7,8 @@ import quotes from "./assets/quote.png";
 import stayvacation from "./assets/stayvacation.png";
 import streamweb from "./assets/streamweb.png";
 import eazyhunt from "./assets/eazyhunt.png";
+import handylink from "./assets/handylink.png"
+import moneyplus from "./assets/moneyplus.png";
 
 export const projects = [
   {
@@ -296,7 +298,7 @@ export const projects = [
   {
     id: "eazyhunt",
     title: "EazyHunt",
-    url: "https://todayshunters.com/",
+    url: "https://eazyhunt.co.ke",
     img: eazyhunt,
     description:
       "A real estate management platform that connects property owners, managers, and tenants with advanced analytics and booking tools.",
@@ -337,5 +339,100 @@ export const projects = [
           "Built dynamic dashboards with real-time analytics, booking insights, and responsive layouts for seamless navigation.",
       },
     ],
+  },
+
+  {
+    id: "handylink",
+    title: "Handylink",
+    url: "https://handylink.kibet.top/",
+    img: handylink, // replace with your imported logo/image
+    description:
+      "A platform that connects clients with trusted cleaning taskers for quick tidy-ups or deep cleaning services, with real-time task management and service recommendations.",
+    features: [
+      "Instant service request matching to skilled Taskers",
+      "Tasker profiles with skills, pricing, and ratings",
+      "Direct communication and booking with Taskers",
+      "Streamlined workflow for both clients and Taskers",
+    ],
+    techStack: {
+      frontend: ["React", "Next.js", "Tailwind CSS", "React Query", "Zod"],
+      backend: ["Node.js", "Express", "Prisma", "MongoDB"],
+      tools: ["GitHub", "Vercel", "Postman", "Figma", "PM2"],
+    },
+    demo: "https://handylink.kibet.top/",
+    repo: "https://github.com/kevohm/handylink", // update if repo name differs
+    challenges: [
+      {
+        challenge:
+          "Ensuring smooth tasker-client matching and instant service suggestions.",
+        solution:
+          "Implemented a dynamic recommendation engine that analyzes user input and suggests the best-matched Taskers in real-time.",
+      },
+      {
+        challenge:
+          "Displaying detailed Tasker profiles with ratings, skills, and pricing efficiently.",
+        solution:
+          "Built reusable profile components with optimized queries and caching via React Query to ensure fast and accurate data retrieval.",
+      },
+      {
+        challenge:
+          "Maintaining secure and seamless booking and communication between clients and Taskers.",
+        solution:
+          "Implemented role-based dashboards and secure APIs for messaging, booking management, and task updates.",
+      },
+      {
+        challenge: "Providing a responsive and intuitive UI for all users.",
+        solution:
+          "Used Tailwind CSS and responsive layouts to deliver a mobile-first, seamless experience across devices.",
+      },
+    ],
+  },
+
+  {
+    id: "moneyplus",
+    title: "MonyTrack+",
+    url: "https://moneyplus.kibet.top/",
+    img: moneyplus, // replace with your imported logo/image
+    description:
+      "A simple and private personal finance tracker that lets users record income, expenses, and savings without handling real money, providing insightful analytics and financial clarity.",
+    features: [
+      "Manual tracking of income, expenses, and savings",
+      "Clear charts and reports for spending and earnings trends",
+      "Private and secure – data stays with the user",
+      "User-friendly dashboard with insights for smarter financial decisions",
+    ],
+    techStack: {
+      frontend: ["React", "Next.js", "Tailwind CSS", "React Query", "Zod"],
+      backend: ["Node.js", "Express", "Prisma", "MongoDB"],
+      tools: ["GitHub", "Vercel", "Postman", "Figma", "PM2"],
+    },
+    demo: "https://moneyplus.kibet.top/",
+    repo: "https://github.com/kevohm/moneyplus", // update if repo name differs
+    challenges: [
+      {
+        challenge:
+          "Tracking financial transactions manually while keeping UI intuitive.",
+        solution:
+          "Built a streamlined form and dashboard system allowing users to quickly input transactions and view summaries without clutter.",
+      },
+      {
+        challenge:
+          "Visualizing financial data in meaningful, easy-to-understand charts.",
+        solution:
+          "Implemented charting libraries to display income, expenses, and savings trends over time with interactive graphs.",
+      },
+      {
+        challenge: "Maintaining user privacy while providing analytics.",
+        solution:
+          "Ensured all data remains private in user accounts with no external storage of financial data, and applied secure authentication practices.",
+      },
+      {
+        challenge:
+          "Providing an experience that scales as users track more transactions.",
+        solution:
+          "Optimized data fetching and caching with React Query to handle large volumes of transactions efficiently.",
+      },
+    ],
+
   },
 ];
