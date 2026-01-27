@@ -9,6 +9,7 @@ import streamweb from "./assets/streamweb.png";
 import eazyhunt from "./assets/eazyhunt.png";
 import handylink from "./assets/handylink.png"
 import moneyplus from "./assets/moneyplus.png";
+import betterepl from "./assets/better_repl.png";
 
 export const projects = [
   {
@@ -92,38 +93,38 @@ export const projects = [
   //     },
   //   ],
   // },
-  {
-    id: "clear-link",
-    title: "Clear Link",
-    url: "https://clearlink-iota.vercel.app/",
-    img: clearlink,
-    description:
-      "A frontend video conferencing UI prototype demonstrating scheduling and responsive design.",
-    features: [
-      "Video call scheduling UI",
-      "Responsive and clean interface",
-      "Basic pricing page layout",
-      "Performance and accessibility optimized",
-    ],
-    techStack: {
-      frontend: ["React", "Tailwind CSS"],
-      backend: [],
-      tools: ["git", "GitHub", "Vercel"],
-    },
-    demo: "https://clearlink-iota.vercel.app/",
-    repo: "https://github.com/kevohm/clearlink",
-    challenges: [
-      {
-        challenge: "Initial instability with real-time design assumptions.",
-        solution:
-          "Focused on UI only and left Socket.IO logic for future backend integration.",
-      },
-      {
-        challenge: "Improving perceived performance.",
-        solution: "Added optimized images and layout animations.",
-      },
-    ],
-  },
+  // {
+  //   id: "clear-link",
+  //   title: "Clear Link",
+  //   url: "https://clearlink-iota.vercel.app/",
+  //   img: clearlink,
+  //   description:
+  //     "A frontend video conferencing UI prototype demonstrating scheduling and responsive design.",
+  //   features: [
+  //     "Video call scheduling UI",
+  //     "Responsive and clean interface",
+  //     "Basic pricing page layout",
+  //     "Performance and accessibility optimized",
+  //   ],
+  //   techStack: {
+  //     frontend: ["React", "Tailwind CSS"],
+  //     backend: [],
+  //     tools: ["git", "GitHub", "Vercel"],
+  //   },
+  //   demo: "https://clearlink-iota.vercel.app/",
+  //   repo: "https://github.com/kevohm/clearlink",
+  //   challenges: [
+  //     {
+  //       challenge: "Initial instability with real-time design assumptions.",
+  //       solution:
+  //         "Focused on UI only and left Socket.IO logic for future backend integration.",
+  //     },
+  //     {
+  //       challenge: "Improving perceived performance.",
+  //       solution: "Added optimized images and layout animations.",
+  //     },
+  //   ],
+  // },
   // {
   //   id: "quotes",
   //   title: "Quotes",
@@ -186,38 +187,38 @@ export const projects = [
   //     },
   //   ],
   // },
-  {
-    id: "caffee",
-    title: "Caffee",
-    url: "https://caffee-beta.vercel.app/",
-    img: caffee,
-    description:
-      "A modern landing page for a coffee shop, showcasing menu, location, and contact features.",
-    features: [
-      "Responsive design for all screen sizes",
-      "Visual menu with images and descriptions",
-      "Location map integration",
-      "Contact form with inquiry routing",
-    ],
-    techStack: {
-      frontend: ["React", "Tailwind CSS", "website"],
-      backend: [],
-      tools: ["git", "GitHub", "Vercel", "Figma"],
-    },
-    demo: "https://caffee-beta.vercel.app/",
-    repo: "https://github.com/kevohm/caffee",
-    challenges: [
-      {
-        challenge: "Ensuring pixel-perfect design match.",
-        solution: "Implemented based on Figma specs with Tailwind utilities.",
-      },
-      {
-        challenge: "Cross-device responsiveness.",
-        solution:
-          "Tested across breakpoints using utility-first layout structure.",
-      },
-    ],
-  },
+  // {
+  //   id: "caffee",
+  //   title: "Caffee",
+  //   url: "https://caffee-beta.vercel.app/",
+  //   img: caffee,
+  //   description:
+  //     "A modern landing page for a coffee shop, showcasing menu, location, and contact features.",
+  //   features: [
+  //     "Responsive design for all screen sizes",
+  //     "Visual menu with images and descriptions",
+  //     "Location map integration",
+  //     "Contact form with inquiry routing",
+  //   ],
+  //   techStack: {
+  //     frontend: ["React", "Tailwind CSS", "website"],
+  //     backend: [],
+  //     tools: ["git", "GitHub", "Vercel", "Figma"],
+  //   },
+  //   demo: "https://caffee-beta.vercel.app/",
+  //   repo: "https://github.com/kevohm/caffee",
+  //   challenges: [
+  //     {
+  //       challenge: "Ensuring pixel-perfect design match.",
+  //       solution: "Implemented based on Figma specs with Tailwind utilities.",
+  //     },
+  //     {
+  //       challenge: "Cross-device responsiveness.",
+  //       solution:
+  //         "Tested across breakpoints using utility-first layout structure.",
+  //     },
+  //   ],
+  // },
   // {
   //   id: "greenbin",
   //   title: "GreenBin Foundation",
@@ -340,6 +341,64 @@ export const projects = [
       },
     ],
   },
+  {
+  id: "betterepl",
+  title: "BetterRepl",
+  url: "https://betterepl.kibet.top",
+  img: betterepl,
+  description:
+    "A secure, interactive MySQL playground that allows developers to write, execute, and analyze SQL queries in real time with built-in validation, error handling, and performance metrics.",
+  features: [
+    "Interactive SQL editor with syntax highlighting and auto-completion",
+    "Real-time query execution with instant results and feedback",
+    "Comprehensive SQL validation and structured error handling",
+    "Query execution timeout controls to prevent long-running operations",
+    "Support for parameterized queries to improve security",
+    "Execution metrics including runtime, rows affected, and query statistics",
+    "Web and CLI-based REPL interfaces",
+  ],
+  techStack: {
+    frontend: ["React", "Tailwind CSS"],
+    backend: ["Node.js", "Express", "MySQL"],
+    tools: [
+      "GitHub",
+      "Docker",
+      "Nginx",
+      "DigitalOcean",
+      "Postman",
+      "PM2",
+    ],
+  },
+  demo: "https://betterepl.kibet.top",
+  repo: "https://github.com/kevohm/betterepl", // update if repo differs
+  challenges: [
+    {
+      challenge:
+        "Safely executing arbitrary SQL queries while preventing malicious or long-running operations.",
+      solution:
+        "Implemented query validation, execution timeouts, and parameterized queries to control execution and enhance security.",
+    },
+    {
+      challenge:
+        "Providing real-time feedback without blocking the server during heavy query execution.",
+      solution:
+        "Used asynchronous execution and controlled connection pooling to ensure responsiveness under load.",
+    },
+    {
+      challenge:
+        "Delivering a developer-friendly SQL editing experience in the browser.",
+      solution:
+        "Integrated Monaco Editor with syntax highlighting, auto-completion, and inline error feedback.",
+    },
+    {
+      challenge:
+        "Exposing meaningful performance insights to users.",
+      solution:
+        "Captured execution metrics such as runtime, rows affected, and query statistics and displayed them in real time.",
+    },
+  ],
+}
+,
 
   {
     id: "handylink",

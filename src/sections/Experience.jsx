@@ -3,65 +3,67 @@ import Footer from "./Footer";
 import Header from "./Header";
 
 const Experience = () => {
+
   const experiences = [
-    {
-      duration: "April, 2025 – Present",
-      title: "Frontend Engineer at Zola Technologies",
-      roles: [
-        "Collaborated with backend engineers and UI/UX designers to meet functional and design specifications.",
-        "Analyzed and optimized React components, improving performance and enhancing accessibility compliance.",
-        "Redesigned the user interface and enhanced user experience, which led to expanded responsibilities.",
-        "Developed reusable and modular React.js components to improve code maintainability.",
-        "Led improvements in user experience and translated ideas into final product designs.",
-        "Implemented caching to reduce the number of requests.",
-      ],
-    },
-    {
-      duration: "May 2024 – Present",
-      title: "Frontend Developer at Tugrow",
-      roles: [
-        "Designed mock-ups for a resume application",
-        "Developed UI components using NextJS",
-        "Came up with branding strategies and even a cool company name",
-        "Collaborated with cross-functional teams to deliver high-quality features",
-        "Implemented responsive design principles to ensure compatibility across devices",
-      ],
-    },
-    {
-      duration: "February 2024 – April 2025",
-      title: "Full Stack Software Engineer at Alpha Nex Softwares",
-      roles: [
-        "Reduced average transaction time by 40% with a React-based UI for quick item selection and one-click M-Pesa payment initiation.",
-        "Built an automated stock tracking system with low-stock alerts, cutting inventory discrepancies by 60%.",
-        "Implemented JWT-based role management, reducing unauthorized access incidents by 100% through token expiration and encryption.",
-        "Created daily sales summaries and exportable PDF/Excel reports, saving businesses 5+ hours/month on manual accounting.",
-        "Deployed the app in 27+ small shops in Nairobi, Kenya, increasing their daily transaction capacity by 30%.",
-        "Successfully implemented Safaricom’s Daraja API to process mobile money transactions, reducing reliance on cash and credit cards for small businesses.",
-        "Conducted research on Job Scheduling and Background tasks for creation of an email notification system using Nunjucks, Redis, and BullMQ.",
-        "Streamlined deployment processes using CI/CD pipelines for faster delivery of updates",
-      ],
-    },
-    {
-      duration: "Jan 2023 – April 2023",
-      title: "Software Engineering Internship at Nuri Technologies",
-      roles: [
-        "Assist in building and maintaining web applications using the MERN stack.",
-        "Built the event search functionality with filters (price, location, amenities), improving user engagement by 30%.",
-        "Designed a secure authentication system using JWT, reducing unauthorized access incidents by 100%.",
-        "Optimized API response times by 40% through query indexing and pagination.",
-      ],
-    },
-    {
-      duration: "Sep 2019 – June 2024",
-      title: "Bachelor of Science in Mathematics and Computer Science - JKUAT",
-      roles: [
-        "Graduated with Second Class Honors (Upper)",
-        "Participated in the Google Student Developer Club",
-        "Developed the 'Intelligent Parking Assistant' for my research project.",
-        "Organized and participated in hackathons to solve real-world problems",
-      ],
-    },
-  ];
+  {
+    duration: "Jan 2025 – Present",
+    title: "Full-Stack Software Engineer at Eazyhunt (Remote)",
+    roles: [
+      "Designed, developed, and maintained Eazyhunt, an end-to-end SaaS full-stack web application.",
+      "Built a reusable table component with sorting, filtering, and pagination, reducing admin data access time from 1 hour to 30 minutes.",
+      "Implemented a marketing source tracking feature to capture user acquisition channels and provide founders with actionable insights.",
+      "Adopted a mobile-first approach to ensure full responsiveness across mobile devices and tablets.",
+      "Deployed and managed the application on DigitalOcean using Nginx and GitHub CI/CD pipelines.",
+      "Acted as the primary technical liaison, communicating progress, trade-offs, and technical decisions directly to the founder.",
+    ],
+  },
+  {
+    duration: "April 2025 – Present",
+    title: "Frontend Engineer at Zola Technologies",
+    roles: [
+      "Improved frontend performance and Largest Contentful Paint (LCP) by implementing caching strategies and CDN delivery.",
+      "Collaborated with backend engineers and designers to deliver seamless user experiences for an EdTech platform.",
+      "Built interactive dashboards using Recharts to visualize student progress and mentorship engagement for stakeholders.",
+      "Implemented a reusable onboarding stepper form using React hooks, Context API for state management, and Zod for validation.",
+      "Owned and maintained authentication flows, fixed critical bugs, and strengthened system security under senior developer guidance.",
+      "Used Storybook to document, develop, and test reusable UI components in isolation.",
+    ],
+  },
+  {
+    duration: "Feb 2024 – April 2025",
+    title: "Full-Stack Software Engineer at Alphanex Softwares Limited",
+    roles: [
+      "Developed and deployed responsive web and mobile applications, including a POS system and a logistics tracker API, achieving 98% uptime.",
+      "Improved state management by replacing prop drilling with Redux Toolkit and RTK Query, enhancing data fetching, caching, and application stability.",
+      "Collaborated with developers to seamlessly integrate backend APIs into frontend applications.",
+      "Implemented secure authentication flows using email/username and password, JWT-based login, token refresh and rotation, and global logout with session invalidation.",
+      "Developed a Node.js wrapper to simplify file upload integration, reducing development time by one day.",
+      "Implemented consistent and responsive user interfaces using Ant Design.",
+    ],
+  },
+  {
+    duration: "Jan 2023 – April 2023",
+    title: "Software Engineering Intern at Nuri Technologies",
+    roles: [
+      "Assisted in building and maintaining web applications using the MERN stack.",
+      "Built event search functionality with filters such as price, location, and amenities, improving user engagement by 30%.",
+      "Designed and implemented secure authentication using JWT, eliminating unauthorized access incidents.",
+      "Optimized API response times by 40% through query indexing and pagination.",
+    ],
+  },
+  {
+    duration: "Sep 2019 – June 2024",
+    title: "Bachelor of Science in Mathematics and Computer Science – JKUAT",
+    roles: [
+      "Graduated with Second Class Honors (Upper).",
+      "Active member of Google Developer Student Clubs (GDSC).",
+      "Developed the 'Intelligent Parking Assistant' as a final-year research project.",
+      "Organized and participated in hackathons focused on solving real-world problems.",
+    ],
+  },
+];
+
+
   return (
     <div className="flex w-full">
       <div className="fixed inset-0 flex justify-center sm:px-8">
