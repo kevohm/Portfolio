@@ -10,6 +10,7 @@ import eazyhunt from "./assets/eazyhunt.png";
 import handylink from "./assets/handylink.png"
 import moneyplus from "./assets/moneyplus.png";
 import betterepl from "./assets/better_repl.png";
+import wisetech from "./assets/wisetech.png";
 
 export const projects = [
   {
@@ -342,63 +343,54 @@ export const projects = [
     ],
   },
   {
-  id: "betterepl",
-  title: "BetterRepl",
-  url: "https://betterepl.kibet.top",
-  img: betterepl,
-  description:
-    "A secure, interactive MySQL playground that allows developers to write, execute, and analyze SQL queries in real time with built-in validation, error handling, and performance metrics.",
-  features: [
-    "Interactive SQL editor with syntax highlighting and auto-completion",
-    "Real-time query execution with instant results and feedback",
-    "Comprehensive SQL validation and structured error handling",
-    "Query execution timeout controls to prevent long-running operations",
-    "Support for parameterized queries to improve security",
-    "Execution metrics including runtime, rows affected, and query statistics",
-    "Web and CLI-based REPL interfaces",
-  ],
-  techStack: {
-    frontend: ["React", "Tailwind CSS"],
-    backend: ["Node.js", "Express", "MySQL"],
-    tools: [
-      "GitHub",
-      "Docker",
-      "Nginx",
-      "DigitalOcean",
-      "Postman",
-      "PM2",
+    id: "betterepl",
+    title: "BetterRepl",
+    url: "https://betterepl.kibet.top",
+    img: betterepl,
+    description:
+      "A secure, interactive MySQL playground that allows developers to write, execute, and analyze SQL queries in real time with built-in validation, error handling, and performance metrics.",
+    features: [
+      "Interactive SQL editor with syntax highlighting and auto-completion",
+      "Real-time query execution with instant results and feedback",
+      "Comprehensive SQL validation and structured error handling",
+      "Query execution timeout controls to prevent long-running operations",
+      "Support for parameterized queries to improve security",
+      "Execution metrics including runtime, rows affected, and query statistics",
+      "Web and CLI-based REPL interfaces",
+    ],
+    techStack: {
+      frontend: ["React", "Tailwind CSS"],
+      backend: ["Node.js", "Express", "MySQL"],
+      tools: ["GitHub", "Docker", "Nginx", "DigitalOcean", "Postman", "PM2"],
+    },
+    demo: "https://betterepl.kibet.top",
+    repo: "https://github.com/kevohm/betterepl", // update if repo differs
+    challenges: [
+      {
+        challenge:
+          "Safely executing arbitrary SQL queries while preventing malicious or long-running operations.",
+        solution:
+          "Implemented query validation, execution timeouts, and parameterized queries to control execution and enhance security.",
+      },
+      {
+        challenge:
+          "Providing real-time feedback without blocking the server during heavy query execution.",
+        solution:
+          "Used asynchronous execution and controlled connection pooling to ensure responsiveness under load.",
+      },
+      {
+        challenge:
+          "Delivering a developer-friendly SQL editing experience in the browser.",
+        solution:
+          "Integrated Monaco Editor with syntax highlighting, auto-completion, and inline error feedback.",
+      },
+      {
+        challenge: "Exposing meaningful performance insights to users.",
+        solution:
+          "Captured execution metrics such as runtime, rows affected, and query statistics and displayed them in real time.",
+      },
     ],
   },
-  demo: "https://betterepl.kibet.top",
-  repo: "https://github.com/kevohm/betterepl", // update if repo differs
-  challenges: [
-    {
-      challenge:
-        "Safely executing arbitrary SQL queries while preventing malicious or long-running operations.",
-      solution:
-        "Implemented query validation, execution timeouts, and parameterized queries to control execution and enhance security.",
-    },
-    {
-      challenge:
-        "Providing real-time feedback without blocking the server during heavy query execution.",
-      solution:
-        "Used asynchronous execution and controlled connection pooling to ensure responsiveness under load.",
-    },
-    {
-      challenge:
-        "Delivering a developer-friendly SQL editing experience in the browser.",
-      solution:
-        "Integrated Monaco Editor with syntax highlighting, auto-completion, and inline error feedback.",
-    },
-    {
-      challenge:
-        "Exposing meaningful performance insights to users.",
-      solution:
-        "Captured execution metrics such as runtime, rows affected, and query statistics and displayed them in real time.",
-    },
-  ],
-}
-,
 
   {
     id: "handylink",
@@ -492,6 +484,55 @@ export const projects = [
           "Optimized data fetching and caching with React Query to handle large volumes of transactions efficiently.",
       },
     ],
+  },
 
+  {
+    id: "wisetech-training-institute",
+    title: "Wisetech Training Institute",
+    url: "https://wisetech.kibet.top/",
+    img: wisetech,
+    description:
+      "A modern, conversion-focused institutional website for Wisetech Training Institute, designed to showcase training programs, professional certifications, and Pearson VUE exam booking information.",
+    features: [
+      "Clear multi-page layout including Home, About, Courses, Certifications, and Contact pages",
+      "Certification showcase with global relevance indicators (UK, Canada, Germany, AWS, CISSP, PMP, CEH)",
+      "Step-by-step Pearson VUE exam booking guide to simplify user onboarding",
+      "Responsive course listings with duration, delivery mode, and descriptions",
+      "Call-to-action driven design to increase inquiries and exam bookings",
+      "Mobile-first responsive design optimized for all screen sizes",
+      "SEO-friendly structure for improved search visibility",
+    ],
+    techStack: {
+      frontend: ["NextJS", "Tailwind CSS", "Typescript"],
+      backend: [],
+      tools: ["GitHub", "Figma", "Vercel", "Netlify"],
+    },
+    demo: "https://wisetech.kibet.top/",
+    repo: "https://github.com/kevohm/Wisetech-Training-Institute",
+    challenges: [
+      {
+        challenge:
+          "Presenting a large volume of courses and certifications without overwhelming users.",
+        solution:
+          "Organized content into clear sections with reusable card components and visual hierarchy for easy scanning.",
+      },
+      {
+        challenge:
+          "Ensuring the website converts visitors into inquiries and exam bookings.",
+        solution:
+          "Implemented prominent call-to-action buttons and structured booking steps to guide users through the decision process.",
+      },
+      {
+        challenge:
+          "Making the website accessible and usable across mobile, tablet, and desktop devices.",
+        solution:
+          "Adopted a mobile-first approach and responsive layouts to ensure consistent user experience on all devices.",
+      },
+      {
+        challenge: "Communicating institutional credibility and trust.",
+        solution:
+          "Highlighted Pearson VUE test center status, strategic partnerships, certifications, and clear contact information.",
+      },
+    ],
   },
 ];
