@@ -15,12 +15,36 @@ import { projects } from "../projects";
 import Footer from "./Footer";
 import Header from "./Header";
 
+const STATUS_BADGES = {
+  completed: {
+    label: "Completed",
+    className:
+      "bg-emerald-100 text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-300",
+  },
+  "undergoing maintainance": {
+    label: "Undergoing Maintenance",
+    className:
+      "bg-amber-100 text-amber-800 dark:bg-amber-900/30 dark:text-amber-300",
+  },
+  "in progress": {
+    label: "In Progress",
+    className:
+      "bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-300",
+  },
+  "recently started": {
+    label: "Recently Started",
+    className:
+      "bg-purple-100 text-purple-800 dark:bg-purple-900/30 dark:text-purple-300",
+  },
+};
+
 const SingleProject = () => {
   const { projectId } = useParams();
 
   const projectData = useMemo(() => {
     return projects.find((p) => p.id === projectId) || null;
   }, [projectId]);
+  const statusMeta = STATUS_BADGES[projectData?.status];
 
   if (!projectData)
     return (
@@ -68,26 +92,34 @@ const SingleProject = () => {
                       </p>
 
                       {/* Action Buttons */}
-                      <div className="flex flex-wrap gap-4">
-                        <a
-                          href={projectData.demo}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="group flex items-center p-3 py-2 text-sm font-medium text-blue-500 bg-white/90 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:ring-white/10 rounded-lg transition-all duration-300 hover:bg-white hover:shadow-xl hover:shadow-zinc-800/10 hover:ring-zinc-900/10 hover:scale-[1.02] hover:-translate-y-0.5 dark:hover:bg-zinc-700/90 dark:hover:ring-white/20 dark:hover:shadow-2xl dark:hover:shadow-black/25 active:scale-[0.98] active:translate-y-0"
+                      <div className="flex flex-wrap items-center gap-3">
+                        {statusMeta && (
+                          <span
+                            className={`inline-flex items-center rounded-full px-3 py-1 text-xs font-semibold ${statusMeta.className}`}
                           >
-                          <ExternalLink className="mr-2 h-5 w-5 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-12" />
-                          Live Demo 
-                          
-                        </a>
-                        <a
-                          href={projectData.repo}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="group flex items-center p-3 py-2 text-sm font-medium text-teal-500 bg-white/90 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:ring-white/10 rounded-lg transition-all duration-300 hover:bg-white hover:shadow-xl hover:shadow-zinc-800/10 hover:ring-zinc-900/10 hover:scale-[1.02] hover:-translate-y-0.5 dark:hover:bg-zinc-700/90 dark:hover:ring-white/20 dark:hover:shadow-2xl dark:hover:shadow-black/25 active:scale-[0.98] active:translate-y-0"
-                        >
-                          <Github className="mr-2 h-5 w-5 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-12" />
-                          View Code
-                        </a>
+                            {statusMeta.label}
+                          </span>
+                        )}
+                        <div className="flex flex-wrap gap-4">
+                          <a
+                            href={projectData.demo}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="group flex items-center p-3 py-2 text-sm font-medium text-blue-500 bg-white/90 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:ring-white/10 rounded-lg transition-all duration-300 hover:bg-white hover:shadow-xl hover:shadow-zinc-800/10 hover:ring-zinc-900/10 hover:scale-[1.02] hover:-translate-y-0.5 dark:hover:bg-zinc-700/90 dark:hover:ring-white/20 dark:hover:shadow-2xl dark:hover:shadow-black/25 active:scale-[0.98] active:translate-y-0"
+                          >
+                            <ExternalLink className="mr-2 h-5 w-5 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-12" />
+                            Live Demo
+                          </a>
+                          <a
+                            href={projectData.repo}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="group flex items-center p-3 py-2 text-sm font-medium text-teal-500 bg-white/90 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:ring-white/10 rounded-lg transition-all duration-300 hover:bg-white hover:shadow-xl hover:shadow-zinc-800/10 hover:ring-zinc-900/10 hover:scale-[1.02] hover:-translate-y-0.5 dark:hover:bg-zinc-700/90 dark:hover:ring-white/20 dark:hover:shadow-2xl dark:hover:shadow-black/25 active:scale-[0.98] active:translate-y-0"
+                          >
+                            <Github className="mr-2 h-5 w-5 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-12" />
+                            View Code
+                          </a>
+                        </div>
                       </div>
                     </div>
 

@@ -68,10 +68,10 @@ const Header = () => {
                       </a>
                     </div>
                   </div>
-                  <NavBar/>
+                  {/* <NavBar/>
                   <div className="pointer-events-auto flex justify-end md:flex-1">
                     <DownloadCVButton/>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>

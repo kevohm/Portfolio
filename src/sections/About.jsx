@@ -2,6 +2,8 @@ import profileImage from "../assets/passportPhoto.png";
 import TypingAnimation from "../components/TypingAnimation";
 import Footer from "./Footer";
 import Header from "./Header";
+import Projects from './Projects';
+import ProjectDisplay from './ProjectDisplay';
 
 const About = () => {
   return (
@@ -12,7 +14,7 @@ const About = () => {
         </div>
       </div>
       <div className="relative flex w-full flex-col">
-        <Header />
+        {/* <Header /> */}
         <main className="flex-auto">
           <div className="sm:px-8 mt-16 sm:mt-32">
             <div className="mx-auto w-full max-w-7xl lg:px-8">
@@ -72,7 +74,7 @@ const About = () => {
                         </p> */}
                       </div>
                     </div>
-                    <div className="lg:pl-20">
+                    {/* <div className="lg:pl-20">
                       <ul role="list">
                         <li className="mt-4 flex">
                           <a
@@ -159,13 +161,14 @@ const About = () => {
                           </a>
                         </li>
                       </ul>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </main>
+        <ProjectDisplay/>
         <Footer />
       </div>
     </div>

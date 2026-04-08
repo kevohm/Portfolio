@@ -12,6 +12,13 @@ import moneyplus from "./assets/moneyplus.png";
 import betterepl from "./assets/better_repl.png";
 import wisetech from "./assets/wisetech.png";
 
+const COMPLETION_STATUS = {
+  COMPLETED: "completed",
+  MAINTAINANCE:"undergoing maintainance",
+  PENDING: "in progress",
+  STARTED:"recently started"
+};
+
 export const projects = [
   {
     id: "stay-vacation",
@@ -257,6 +264,7 @@ export const projects = [
     title: "StreamWeb",
     url: "https://streamweb.vercel.app/",
     img: streamweb,
+    status: COMPLETION_STATUS.MAINTAINANCE,
     description:
       "A Netflix-style movie streaming platform using Angular and NestJS with TMDB, IMDb, and YouTube integration.",
     features: [
@@ -302,6 +310,7 @@ export const projects = [
     title: "EazyHunt",
     url: "https://eazyhunt.co.ke",
     img: eazyhunt,
+    status: COMPLETION_STATUS.MAINTAINANCE,
     description:
       "A real estate management platform that connects property owners, managers, and tenants with advanced analytics and booking tools.",
     features: [
@@ -347,6 +356,7 @@ export const projects = [
     title: "BetterRepl",
     url: "https://betterepl.kibet.top",
     img: betterepl,
+    status: COMPLETION_STATUS.MAINTAINANCE,
     description:
       "A secure, interactive MySQL playground that allows developers to write, execute, and analyze SQL queries in real time with built-in validation, error handling, and performance metrics.",
     features: [
@@ -397,6 +407,7 @@ export const projects = [
     title: "Handylink",
     url: "https://handylink.kibet.top/",
     img: handylink, // replace with your imported logo/image
+    status: COMPLETION_STATUS.PENDING,
     description:
       "A platform that connects clients with trusted cleaning taskers for quick tidy-ups or deep cleaning services, with real-time task management and service recommendations.",
     features: [
@@ -444,6 +455,7 @@ export const projects = [
     title: "MonyTrack+",
     url: "https://moneyplus.kibet.top/",
     img: moneyplus, // replace with your imported logo/image
+    status: COMPLETION_STATUS.MAINTAINANCE,
     description:
       "A simple and private personal finance tracker that lets users record income, expenses, and savings without handling real money, providing insightful analytics and financial clarity.",
     features: [
@@ -491,6 +503,7 @@ export const projects = [
     title: "Wisetech Training Institute",
     url: "https://wisetech.kibet.top/",
     img: wisetech,
+    status: COMPLETION_STATUS.COMPLETED,
     description:
       "A modern, conversion-focused institutional website for Wisetech Training Institute, designed to showcase training programs, professional certifications, and Pearson VUE exam booking information.",
     features: [
