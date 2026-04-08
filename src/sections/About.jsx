@@ -14,7 +14,7 @@ const About = () => {
         </div>
       </div>
       <div className="relative flex w-full flex-col">
-        {/* <Header /> */}
+        <Header />
         <main className="flex-auto">
           <div className="sm:px-8 mt-16 sm:mt-32">
             <div className="mx-auto w-full max-w-7xl lg:px-8">

@@ -1,3 +1,4 @@
+import { MailIcon } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -99,16 +100,7 @@ const Footer = () => {
                           className="group flex text-sm font-medium text-zinc-800 transition hover:text-teal-500 dark:text-zinc-200 dark:hover:text-teal-500"
                           href="mailto:kevinkipkibet@gmail.com"
                         >
-                          <svg
-                            viewBox="0 0 24 24"
-                            aria-hidden="true"
-                            className="h-6  w-6 flex-none fill-zinc-500 transition group-hover:fill-teal-500"
-                          >
-                            <path
-                              fillRule="evenodd"
-                              d="M6 5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H6Zm.245 2.187a.75.75 0 0 0-.99 1.126l6.25 5.5a.75.75 0 0 0 .99 0l6.25-5.5a.75.75 0 0 0-.99-1.126L12 12.251 6.245 7.187Z"
-                            ></path>
-                          </svg>
+                          <MailIcon className="h-6 w-6 flex-none text-zinc-500 transition group-hover:text-teal-500" />
                           {/* <span className="ml-4">kevinkipkibet@gmail.com</span> */}
                         </a>
                       </li>
